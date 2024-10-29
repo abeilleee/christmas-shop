@@ -41,6 +41,10 @@ p {
     line-height: 148%;
 }
 
+svg{
+    stroke: #FFFFFF;
+}
+
 .button {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -552,6 +556,11 @@ p {
     align-items: center;
 }
 
+.footer__box .caption--black:hover {
+    color: #FF4646;
+    cursor: pointer;
+}
+
 .links {
     display: flex;
     flex-direction: row;
@@ -563,7 +572,27 @@ p {
     height: 42px;
 }
 
+.img-box:hover{
+    cursor: pointer;
+}
+
 .img-box img {
     width: 24px;
     height: 24px;
+}
+
+.arrow--active:hover svg{
+    stroke: red;
+    transition: 0.3s;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    stroke: #181C29;
+}
+
+.icon:hover{
+    stroke: #FF4646;
+    transition: 0.3s;
 }
