@@ -56,6 +56,24 @@ p {
     padding: 20px 30px;
 }
 
+.action-large {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    color: #181C29;
+    text-transform: uppercase;
+}
+
+.action-small {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    color: #181C29;
+    text-transform: uppercase;
+}
+
 .background__wrapper {
     background: url('images/bg-snow.png') #FF4646;
     ;
@@ -135,6 +153,10 @@ p {
 
 .caption--red {
     color: #FF4646;
+}
+
+.caption--black{
+    color: #181C29;
 }
 
 .caption--top {
@@ -431,4 +453,61 @@ p {
 
 .timer__container:first-child:after {
     display: none;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px;
+}
+
+.footer__cards-box {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+}
+
+.footer__card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #ECF3F8;
+    padding: 20px;
+    flex: 1 1 0;
+    /* flex-grow, flex-shrink, flex-basis */
+}
+
+.footer__card img {
+    width: 80px;
+    height: 80px;
+}
+
+.footer__box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.img-box {
+    width: 42px;
+    height: 42px;
+}
+
+.img-box img {
+    width: 24px;
+    height: 24px;
 }
