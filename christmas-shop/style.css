@@ -85,6 +85,10 @@ svg{
     text-transform: uppercase;
 }
 
+.action-small--white{
+    color: #FFFFFF;
+}
+
 .background__wrapper {
     background: url('images/bg-snow.png') #FF4646;
     ;
@@ -595,4 +599,12 @@ svg{
 .icon:hover{
     stroke: #FF4646;
     transition: 0.3s;
+}
+
+.gifts{
+    background: url(images/bg-garland.png), #FF4646;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    height: 100vh;
 }
