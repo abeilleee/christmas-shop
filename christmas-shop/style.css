@@ -54,6 +54,13 @@ p {
     width: 235px;
     height: 56px;
     padding: 20px 30px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #181C29;
+    background-color: #FFFFFF;
+    transition: 0.4s;
 }
 
 .action-large {
@@ -100,6 +107,10 @@ p {
     align-items: center;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .logo__img {
     width: 24px;
     height: 24px;
@@ -123,6 +134,20 @@ p {
     line-height: 130%;
     letter-spacing: 0.05em;
     padding: 12px 20px;
+
+}
+
+.list-item:hover {
+    color: #FF4646;
+    background-color: rgb(255, 70, 70, 0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.list-item:hover a {
+    color: #FF4646;
+    transition: 0.3s;
 }
 
 .hero {
@@ -155,7 +180,7 @@ p {
     color: #FF4646;
 }
 
-.caption--black{
+.caption--black {
     color: #181C29;
 }
 
@@ -333,9 +358,19 @@ p {
     align-items: center;
 }
 
+.arrow--active {
+    cursor: pointer;
+}
+
 .arrow--disabled {
     opacity: 40%;
 }
+
+.arrow--active:hover {
+    background-color: #FFFFFF;
+    transition: 0.4s;
+}
+
 
 .best-gifts {
     background: url(images/bg-snow.png), #FF4646;
@@ -373,6 +408,12 @@ p {
     background-color: #ECF3F8;
     width: 310px;
     height: 342px;
+    cursor: pointer;
+}
+
+.card:hover h3 {
+    color: #FF4646;
+    transition: 0.3s;
 }
 
 .card__img {
@@ -480,7 +521,22 @@ p {
     background-color: #ECF3F8;
     padding: 20px;
     flex: 1 1 0;
+    cursor: pointer;
     /* flex-grow, flex-shrink, flex-basis */
+}
+
+.footer__card:hover {
+    transition: 0.3s;
+}
+
+.footer__card:hover a {
+    transition: 0.3s;
+    color: #FF4646;
+}
+
+.footer__card:hover h3 {
+    transition: 0.3s;
+    color: #FF4646;
 }
 
 .footer__card img {
