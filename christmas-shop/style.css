@@ -41,7 +41,7 @@ p {
     line-height: 148%;
 }
 
-svg{
+svg {
     stroke: #FFFFFF;
 }
 
@@ -85,7 +85,7 @@ svg{
     text-transform: uppercase;
 }
 
-.action-small--white{
+.action-small--white {
     color: #FFFFFF;
 }
 
@@ -576,7 +576,7 @@ svg{
     height: 40px;
 }
 
-.img-box:hover{
+.img-box:hover {
     cursor: pointer;
 }
 
@@ -585,26 +585,62 @@ svg{
     height: 24px;
 }
 
-.arrow--active:hover svg{
+.arrow--active:hover svg {
     stroke: red;
     transition: 0.3s;
 }
 
-.icon{
+.icon {
     width: 24px;
     height: 24px;
     stroke: #181C29;
 }
 
-.icon:hover{
+.icon:hover {
     stroke: #FF4646;
     transition: 0.3s;
 }
 
-.gifts{
+.gifts {
     background: url(images/bg-garland.png), #FF4646;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    height: 100vh;
+
+}
+
+.gifts__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 20px;
+}
+
+
+.gifts__header h1 {
+    text-align: center;
+    width: 426px;
+}
+
+.gifts__tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.list-item-giftspage:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.list-item-giftspage:hover a{
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
