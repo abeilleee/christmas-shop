@@ -637,14 +637,20 @@ svg {
     gap: 8px;
 }
 
-.list-item-giftspage:hover {
+.tab:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transition: 0.3s;
 }
 
-.list-item-giftspage:hover a {
+.tab:hover a {
     color: #FFFFFF;
     transition: 0.3s;
+}
+
+.tab--active{
+    color: #FFFFFF;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .cards-container {
