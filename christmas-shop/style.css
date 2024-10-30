@@ -603,8 +603,9 @@ svg {
 
 .gifts {
     background: url(images/bg-garland.png), #FF4646;
-    background-size: cover;
-    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:top;
     border-radius: 20px;
 
 }
