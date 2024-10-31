@@ -161,7 +161,7 @@ svg {
     transition: 0.3s;
 }
 
-.no-hover{
+.no-hover {
     pointer-events: none;
 }
 
@@ -511,7 +511,7 @@ svg {
     display: none;
 }
 
-.footer__wrapper {
+.footer__cards-wrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -523,7 +523,7 @@ svg {
 .footer__cards-box {
     display: flex;
     flex-direction: row;
-    gap: 12px;
+    gap: 12px; 
     width: 100%;
 }
 
@@ -536,8 +536,8 @@ svg {
     background-color: #ECF3F8;
     padding: 20px;
     flex: 1 1 0;
-    cursor: pointer;
     /* flex-grow, flex-shrink, flex-basis */
+    cursor: pointer;    
 }
 
 .footer__card:hover {
@@ -559,15 +559,15 @@ svg {
     height: 80px;
 }
 
-.footer__box {
+.footer__links-box {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.footer__box .caption--black:hover {
+.footer__links-box .caption--black:hover {
     color: #FF4646;
     cursor: pointer;
 }
@@ -647,7 +647,7 @@ svg {
     transition: 0.3s;
 }
 
-.tab--active{
+.tab--active {
     color: #FFFFFF;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.2);
