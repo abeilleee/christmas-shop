@@ -511,7 +511,7 @@ svg {
     display: none;
 }
 
-.footer__cards-wrapper {
+.footer__wrapper {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -523,8 +523,24 @@ svg {
 .footer__cards-box {
     display: flex;
     flex-direction: row;
-    gap: 12px; 
     width: 100%;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.footer-link {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+a.footer-link{
+    color: #181C29;
+}
+
+.footer-text{
+    color: black;
 }
 
 .footer__card {
@@ -535,9 +551,7 @@ svg {
     border-radius: 20px;
     background-color: #ECF3F8;
     padding: 20px;
-    flex: 1 1 0;
-    /* flex-grow, flex-shrink, flex-basis */
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .footer__card:hover {
@@ -545,8 +559,13 @@ svg {
 }
 
 .footer__card:hover a {
-    transition: 0.4s;
     color: #FF4646;
+    transition: 0.4s;    
+}
+
+.footer__card:hover p {
+    color: #FF4646;
+    transition: 0.4s;    
 }
 
 .footer__card:hover h3 {
