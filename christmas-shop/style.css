@@ -112,7 +112,7 @@ svg {
     padding: 12px;
 }
 
-.logo {
+.logo__link{
     display: flex;
     gap: 8px;
     padding: 8px 20px;
