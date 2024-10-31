@@ -65,6 +65,7 @@ svg {
     color: #181C29;
     background-color: #FFFFFF;
     transition: 0.4s;
+    box-shadow: 0 2px 35px 10px rgba(0, 0, 0, 0.3);
 }
 
 .action-large {
@@ -602,8 +603,14 @@ a.footer-link{
     height: 40px;
 }
 
-.img-box:hover {
+.img-box:hover{
     cursor: pointer;
+    stroke: #FF4646;
+}
+
+.img-box:hover svg{
+    stroke: #FF4646;
+    transition: 0.4s;
 }
 
 .img-box img {
@@ -620,11 +627,6 @@ a.footer-link{
     width: 24px;
     height: 24px;
     stroke: #181C29;
-}
-
-.icon:hover {
-    stroke: #FF4646;
-    transition: 0.2s;
 }
 
 .gifts {
