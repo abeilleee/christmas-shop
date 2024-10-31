@@ -57,7 +57,7 @@ svg {
     background-color: #181C29;
     width: 235px;
     height: 56px;
-    padding: 20px 30px;
+    padding: 20px 32px;
     cursor: pointer;
 }
 
@@ -109,7 +109,8 @@ svg {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .logo__link{
@@ -166,7 +167,7 @@ svg {
     pointer-events: none;
 }
 
-.hero {
+.container-hero{
     background: url(images/bg-snow.png), url(images/bg-ball.png) #FF4646;
     background-size: cover;
     background-position: center;
@@ -264,7 +265,7 @@ svg {
     text-align: center;
 }
 
-.about {
+.container-about{
     background: url(images/bg-snow.png), #FF4646;
     background-size: cover;
     background-position: center;
@@ -306,7 +307,7 @@ svg {
     height: 528px;
 }
 
-.slider-section {
+.container-slider {
     background: url(images/bg-snow.png), #FF4646;
     background-size: cover;
     background-position: center;
@@ -388,7 +389,7 @@ svg {
 }
 
 
-.best-gifts {
+.container-best-gifts {
     background: url(images/bg-snow.png), #FF4646;
     background-size: cover;
     background-position: center;
@@ -446,28 +447,28 @@ svg {
     height: 100%;
 }
 
-.cta {
+.container-cta {
     background: url(images/bg-snow.png), #FF4646 url(images/bg-forest.png);
     background-size: cover;
     background-position: center;
-    height: 700px;
-    padding-top: 60px;
+    padding-top: 60px; 
+    padding-bottom: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .cta__box {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 426px;
     height: 428px;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 120px;
     gap: 20px;
 }
 
 .cta__box>h2 {
-    padding-top: 60px;
     text-align: center;
 }
 
@@ -475,6 +476,7 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    padding-bottom: 60px;
 }
 
 .timer-wrapper>p {
@@ -497,6 +499,10 @@ svg {
 }
 
 .timer__container h2 {
+    text-align: center;
+}
+
+.timer__container h4 {
     text-align: center;
 }
 
@@ -601,6 +607,9 @@ a.footer-link{
 .img-box {
     width: 40px;
     height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .img-box:hover{
@@ -629,13 +638,12 @@ a.footer-link{
     stroke: #181C29;
 }
 
-.gifts {
+.container-gifts {
     background: url(images/bg-garland.png), #FF4646;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
     border-radius: 20px;
-
 }
 
 .gifts__wrapper {
