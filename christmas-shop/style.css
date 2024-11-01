@@ -291,6 +291,12 @@ svg {
     padding: 100px 152px 100px 60px;
 }
 
+.about__img{
+    background: url(images/santa.png);
+    background-position: center;
+    border-radius: 20px;
+}
+
 .description {
     line-height: 148%;
     margin-bottom: 60px;
