@@ -289,29 +289,20 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 100px 152px 100px 60px;
+    padding: 100px 0px 0px 60px;
 }
 
 .about__img{
     background: url(images/santa.png);
     background-position: center;
     border-radius: 20px;
+    width: 638px;
+    height: 528px;
 }
 
 .description {
     line-height: 148%;
     margin-bottom: 60px;
-}
-
-.about__img {
-    width: 638px;
-    height: 528px;
-}
-
-.about img {
-    border-radius: 20px;
-    width: 638px;
-    height: 528px;
 }
 
 .container-slider {
