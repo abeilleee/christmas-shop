@@ -398,6 +398,7 @@ svg {
     flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
+    gap: 20px;
 }
 
 .best-gifts__titles {
@@ -687,6 +688,12 @@ a.footer-link {
     gap: 12px;
 }
 
-@media (max-width:1135px) {
-
+@media (max-width:1439px) {
+    .best-gifts__cards {
+        display: grid;
+        padding: 0 60px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 0 auto;
+    }
 }
