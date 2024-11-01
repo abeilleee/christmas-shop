@@ -397,6 +397,7 @@ svg {
     flex-direction: column;
     padding-top: 60px;
     padding-bottom: 60px;
+    gap: 20px;
 }
 
 .best-gifts__titles {
