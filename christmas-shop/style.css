@@ -113,7 +113,7 @@ svg {
     padding-bottom: 12px;
 }
 
-.logo__link{
+.logo__link {
     display: flex;
     gap: 8px;
     padding: 8px 20px;
@@ -167,7 +167,7 @@ svg {
     pointer-events: none;
 }
 
-.container-hero{
+.container-hero {
     background: url(images/bg-snow.png), url(images/bg-ball.png) #FF4646;
     background-size: cover;
     background-position: center;
@@ -265,7 +265,7 @@ svg {
     text-align: center;
 }
 
-.container-about{
+.container-about {
     background: url(images/bg-snow.png), #FF4646;
     background-size: cover;
     background-position: center;
@@ -292,7 +292,7 @@ svg {
     padding: 100px 0px 0px 60px;
 }
 
-.about__img{
+.about__img {
     background: url(images/santa.png);
     background-position: center;
     border-radius: 20px;
@@ -406,7 +406,6 @@ svg {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
 }
 
 .best-gifts__cards {
@@ -450,7 +449,7 @@ svg {
     background: url(images/bg-snow.png), #FF4646 url(images/bg-forest.png);
     background-size: cover;
     background-position: center;
-    padding-top: 60px; 
+    padding-top: 60px;
     padding-bottom: 60px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -541,11 +540,11 @@ svg {
     flex-shrink: 0;
 }
 
-a.footer-link{
+a.footer-link {
     color: #181C29;
 }
 
-.footer-text{
+.footer-text {
     color: black;
 }
 
@@ -566,12 +565,12 @@ a.footer-link{
 
 .footer__card:hover a {
     color: #FF4646;
-    transition: 0.4s;    
+    transition: 0.4s;
 }
 
 .footer__card:hover p {
     color: #FF4646;
-    transition: 0.4s;    
+    transition: 0.4s;
 }
 
 .footer__card:hover h3 {
@@ -611,12 +610,12 @@ a.footer-link{
     justify-content: center;
 }
 
-.img-box:hover{
+.img-box:hover {
     cursor: pointer;
     stroke: #FF4646;
 }
 
-.img-box:hover svg{
+.img-box:hover svg {
     stroke: #FF4646;
     transition: 0.4s;
 }
