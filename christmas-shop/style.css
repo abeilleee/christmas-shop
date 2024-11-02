@@ -289,8 +289,7 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 100px 0px 100px 60px;
-    width: 426px;
+    padding: 100px 0px 0px 60px;
 }
 
 .about__img {
@@ -407,7 +406,6 @@ svg {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
 }
 
 .best-gifts__cards {
