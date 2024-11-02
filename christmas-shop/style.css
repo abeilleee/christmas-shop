@@ -290,13 +290,14 @@ svg {
     flex-direction: column;
     gap: 20px;
     padding: 100px 0px 0px 60px;
+    width: 50%;
 }
 
 .about__img {
     background: url(images/santa.png);
     background-position: center;
     border-radius: 20px;
-    width: 638px;
+    width: 50%;
     height: 528px;
 }
 
