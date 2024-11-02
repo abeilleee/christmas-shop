@@ -706,3 +706,9 @@ a.footer-link {
         padding-right:60px;
     }
 }
+
+@media (max-width:1190px) {
+    .footer__cards-box {
+        flex-direction: column;
+    }
+}
