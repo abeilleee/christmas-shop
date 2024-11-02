@@ -309,6 +309,7 @@ svg {
     background: url(images/bg-snow.png), #FF4646;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .slider-section__box {
