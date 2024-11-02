@@ -695,3 +695,18 @@ a.footer-link {
         margin: 0 auto;
     }
 }
+
+@media (max-width:1330px) {
+    .about__box {
+        gap: 0px;
+    }
+
+    .about__box br{
+        display: none;
+    }
+
+    .about__text {
+        padding-right:60px;
+        max-width: 50%;
+    }
+}
