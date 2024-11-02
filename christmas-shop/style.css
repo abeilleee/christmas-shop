@@ -315,6 +315,7 @@ svg {
     display: flex;
     flex-direction: column;
     padding: 60px 0px;
+    gap: 20px;
 }
 
 .slider-section__titles {
@@ -324,13 +325,6 @@ svg {
     align-items: center;
     gap: 12px;
     margin-bottom: 20px;
-}
-
-.row {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    gap: 20px;
 }
 
 .slider {
