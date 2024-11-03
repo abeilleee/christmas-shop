@@ -745,3 +745,9 @@ a.footer-link {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+@media (max-width:435px) {
+    .cta__box {
+        width: 364px;
+    }
+}
