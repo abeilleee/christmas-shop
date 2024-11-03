@@ -734,6 +734,12 @@ a.footer-link {
     }
 }
 
+@media (max-width:1000px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width:890px) {
     .about__text {
         padding: 46px 60px;
