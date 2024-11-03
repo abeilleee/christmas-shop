@@ -339,7 +339,6 @@ svg {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin-bottom: 20px;
 }
 
 .slider {
@@ -734,5 +733,9 @@ a.footer-link {
 
     .header__burger {
         display: flex;
+    }
+
+    .slider-section__box {
+        padding-left: 8px;
     }
 }
