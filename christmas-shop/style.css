@@ -783,6 +783,10 @@ a.footer-link {
     }
 
     .tab{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0.05em;
         padding: 12px 8px;
     }
 }
@@ -794,5 +798,9 @@ a.footer-link {
 
     .gifts__header h1 {
         width: 100%;
+    }
+
+    .gifts__tabs {
+        gap: 0px;
     }
 }
