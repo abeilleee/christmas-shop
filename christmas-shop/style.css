@@ -707,6 +707,10 @@ a.footer-link {
         align-items: center;
         margin: 0 auto;
     }
+
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width:1330px) {
