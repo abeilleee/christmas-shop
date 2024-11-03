@@ -706,4 +706,9 @@ a.footer-link {
     .footer__cards-box {
         flex-direction: column;
     }
+
+    .container{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
