@@ -344,6 +344,7 @@ svg {
 .slider {
     display: flex;
     padding-right: 0;
+    gap: 20px;
 }
 
 .slide {
