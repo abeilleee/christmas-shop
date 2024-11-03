@@ -787,4 +787,8 @@ a.footer-link {
     .cta__box {
         width: 100%;
     }
+
+    .gifts__header h1 {
+        width: 100%;
+    }
 }
