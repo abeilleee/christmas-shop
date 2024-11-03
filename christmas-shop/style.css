@@ -147,7 +147,6 @@ svg {
     line-height: 130%;
     letter-spacing: 0.05em;
     padding: 12px 20px;
-
 }
 
 .list-item:hover {
@@ -161,6 +160,21 @@ svg {
 .list-item:hover a {
     color: #FF4646;
     transition: 0.4s;
+}
+
+.header__burger-wrapper{
+    display: none;
+}
+
+.header__burger{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.burger-line{
+    width: 20px;
+    border: 1px solid #181C29;
 }
 
 .no-hover {
