@@ -162,17 +162,17 @@ svg {
     transition: 0.4s;
 }
 
-.header__burger-wrapper{
+.header__burger-wrapper {
     display: none;
 }
 
-.header__burger{
+.header__burger {
     display: none;
     flex-direction: column;
     gap: 8px;
 }
 
-.burger-line{
+.burger-line {
     width: 20px;
     border: 1px solid #181C29;
 }
@@ -707,12 +707,12 @@ a.footer-link {
 }
 
 @media (max-width:1330px) {
-    .about__box br{
+    .about__box br {
         display: none;
     }
 
     .about__text {
-        padding-right:60px;
+        padding-right: 60px;
     }
 }
 
@@ -721,8 +721,18 @@ a.footer-link {
         flex-direction: column;
     }
 
-    .container{
+    .container {
         padding-left: 8px;
         padding-right: 8px;
+    }
+}
+
+@media (max-width:769px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
     }
 }
