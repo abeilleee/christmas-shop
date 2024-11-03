@@ -730,6 +730,12 @@ a.footer-link {
     }
 }
 
+@media (max-width:890px) {
+    .about__text {
+        padding: 46px 60px;
+    }
+}
+
 @media (max-width:769px) {
     .header__nav {
         display: none;
@@ -747,6 +753,19 @@ a.footer-link {
 
     .hero__box {
         padding: 60px 0px;
+    }
+
+    .about__box {
+        flex-direction: column;
+    }
+
+    .about__text {
+        width: 100%;
+        padding: 0 20px 60px 20px;
+    }
+
+    .about__img {
+        width: 100%;
     }
 }
 
