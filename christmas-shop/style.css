@@ -735,8 +735,4 @@ a.footer-link {
     .header__burger {
         display: flex;
     }
-
-    .slider-section__box {
-        padding-left: 8px;
-    }
 }
