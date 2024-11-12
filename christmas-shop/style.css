@@ -49,6 +49,7 @@ svg {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
+    text-align: center;
     line-height: 130%;
     letter-spacing: 0.05em;
     border-radius: 20px;
