@@ -148,7 +148,15 @@ svg {
     line-height: 130%;
     letter-spacing: 0.05em;
     padding: 12px 20px;
+}
 
+.list-item--active {
+    background-color: rgb(255, 70, 70, 0.1);
+    border-radius: 12px;
+}
+
+.list-item--active a {
+    color: #FF4646;
 }
 
 .list-item:hover {
