@@ -1,0 +1,43 @@
+.timer-wrapper {
+    @include flex-column;
+    gap: 8px;
+    padding-bottom: 60px;
+
+    &>p {
+        text-align: center;
+    }
+}
+
+.timer {
+    display: flex;
+    border-radius: 20px;
+    background-color: $static-white-40;
+    padding: 8px 12px;
+
+    &__container {
+        width: 80px;
+        height: 52px;
+        position: relative;
+        @include flex-column;
+    }
+
+    &__container h2 {
+        text-align: center;
+    }
+
+    &__container h4 {
+        text-align: center;
+    }
+
+    &__container:after {
+        position: absolute;
+        content: '';
+        border: 1px solid $static-white-40;
+        top: 15px;
+        height: 20px;
+    }
+
+    &__container:first-child:after {
+        display: none;
+    }
+}
