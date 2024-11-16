@@ -411,6 +411,84 @@ svg {
   }
 }
 
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.header__nav.open {
+  display: flex;
+  right: 0px;
+  transition: all 0.5s;
+}
+.header__burger-wrapper {
+  display: none;
+}
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 40px;
+  height: 40px;
+}
+.header__burger-line {
+  width: 20px;
+  border: 1px solid #181C29;
+  transition: all 0.5s;
+}
+.header__burger.open div:first-child {
+  transform: rotate(45deg);
+  translate: 0px 4px;
+  transition: all 0.5s;
+}
+.header__burger.open div:last-child {
+  transform: rotate(-45deg);
+  translate: 0px -5px;
+  transition: all 0.5s;
+}
+@media (max-width: 769px) {
+  .header__nav {
+    display: flex;
+    position: fixed;
+    top: 63px;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: #FFFFFF;
+    transition: all 0.5s;
+  }
+  .header__burger {
+    display: flex;
+  }
+}
+
+.logo__link {
+  display: flex;
+  gap: 8px;
+  padding: 8px 20px;
+  align-items: center;
+}
+.logo__img {
+  width: 24px;
+  height: 24px;
+}
+.logo__title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+@media (hover: hover) {
+  .logo:hover {
+    cursor: pointer;
+  }
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
