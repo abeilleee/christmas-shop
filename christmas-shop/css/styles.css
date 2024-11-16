@@ -411,6 +411,58 @@ svg {
   }
 }
 
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 82px;
+  margin: 0 auto;
+}
+.container--hero {
+  background: url(../images/bg-snow.png), url(../images/bg-ball.png) #FF4646;
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.container--about {
+  background: url(../images/bg-snow.png), #FF4646;
+  background-size: cover;
+  background-position: center;
+}
+.container--slider {
+  background: url(../images/bg-snow.png), #FF4646;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.container--best-gifts {
+  background: url(../images/bg-snow.png), #FF4646;
+  background-size: cover;
+  background-position: center;
+}
+.container--cta {
+  background: url(../images/bg-snow.png), #FF4646 url(../images/bg-forest.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.container--gifts {
+  background: url(../images/bg-garland.png), #FF4646;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 20px;
+}
+@media (max-width: 1190px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
 .header__box {
   display: flex;
   justify-content: space-between;
@@ -489,58 +541,63 @@ svg {
   }
 }
 
-.container {
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 82px;
-  margin: 0 auto;
+.nav-list {
+  display: flex;
+  gap: 8px;
 }
-.container--hero {
-  background: url(../images/bg-snow.png), url(../images/bg-ball.png) #FF4646;
-  background-size: cover;
-  background-position: center;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+.nav-list.open {
+  display: flex;
 }
-.container--about {
-  background: url(../images/bg-snow.png), #FF4646;
-  background-size: cover;
-  background-position: center;
-}
-.container--slider {
-  background: url(../images/bg-snow.png), #FF4646;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-.container--best-gifts {
-  background: url(../images/bg-snow.png), #FF4646;
-  background-size: cover;
-  background-position: center;
-}
-.container--cta {
-  background: url(../images/bg-snow.png), #FF4646 url(../images/bg-forest.png);
-  background-size: cover;
-  background-position: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-.container--gifts {
-  background: url(../images/bg-garland.png), #FF4646;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: top;
-  border-radius: 20px;
-}
-@media (max-width: 1190px) {
-  .container {
-    padding-left: 8px;
-    padding-right: 8px;
+@media (max-width: 769px) {
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
   }
 }
 
+.list-item {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  padding: 12px 20px;
+  border-radius: 12px;
+}
+.list-item--active {
+  background-color: rgba(255, 70, 70, 0.1019607843);
+  border-radius: 12px;
+}
+.list-item--no-hover {
+  pointer-events: none;
+}
+.list-item--active a {
+  color: #FF4646;
+}
+@media (hover: hover) {
+  .list-item:hover {
+    color: #FF4646;
+    background-color: rgba(255, 70, 70, 0.1019607843);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .list-item:hover a {
+    color: #FF4646;
+    transition: 0.4s;
+  }
+}
+
+@media (max-width: 769px) {
+  .list-item-link {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+  }
+}
 .footer__wrapper {
   display: flex;
   flex-direction: column;
