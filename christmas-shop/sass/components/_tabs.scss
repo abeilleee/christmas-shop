@@ -1,0 +1,49 @@
+.gifts__tabs {
+    display: flex;
+    gap: 8px;
+
+    @media (max-width:435px) {
+        & {
+            gap: 0px;
+        }
+    }
+}
+
+.tab {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+
+    &--active {
+        color: $static-white;
+        border-radius: 12px;
+        background-color: $static-white-20;
+        pointer-events: none;
+    }
+
+    @media (hover:hover) {
+        &:hover {
+            background-color: $static-white-20;
+            transition: 0.4s;
+            border-radius: 12px;
+        }
+
+        &:hover button {
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width:650px) {
+        & {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 130%;
+            letter-spacing: 0.05em;
+            padding: 12px 8px;
+        }
+    }
+}

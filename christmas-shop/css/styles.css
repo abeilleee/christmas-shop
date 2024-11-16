@@ -435,3 +435,51 @@ svg {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
+.gifts__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+@media (max-width: 435px) {
+  .gifts__tabs {
+    gap: 0px;
+  }
+}
+
+.tab {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  padding: 12px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.tab--active {
+  color: #FFFFFF;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .tab:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 12px;
+  }
+  .tab:hover button {
+    cursor: pointer;
+  }
+}
+@media (max-width: 650px) {
+  .tab {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    padding: 12px 8px;
+  }
+}
