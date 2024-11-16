@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 82px;
+    margin: 0 auto;
+
+    &--hero {
+        background: url(../images/bg-snow.png), url(../images/bg-ball.png) $primary-color;
+        @include background;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    &--about {
+        background: url(../images/bg-snow.png), $primary-color;
+        @include background;
+    }
+
+    &--slider {
+        background: url(../images/bg-snow.png), $primary-color;
+        @include background;
+        overflow: hidden;
+    }
+
+    &--best-gifts {
+        background: url(../images/bg-snow.png), $primary-color;
+        @include background;
+    }
+
+    &--cta {
+        background: url(../images/bg-snow.png), $primary-color url(../images/bg-forest.png);
+        @include background;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    &--gifts {
+        background: url(../images/bg-garland.png), $primary-color;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top;
+        border-radius: 20px;
+    }
+
+    @media (max-width:1190px) {
+        & {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    }
+}

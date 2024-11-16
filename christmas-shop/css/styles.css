@@ -483,3 +483,55 @@ svg {
     padding: 12px 8px;
   }
 }
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 82px;
+  margin: 0 auto;
+}
+.container--hero {
+  background: url(../images/bg-snow.png), url(../images/bg-ball.png) #FF4646;
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.container--about {
+  background: url(../images/bg-snow.png), #FF4646;
+  background-size: cover;
+  background-position: center;
+}
+.container--slider {
+  background: url(../images/bg-snow.png), #FF4646;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.container--best-gifts {
+  background: url(../images/bg-snow.png), #FF4646;
+  background-size: cover;
+  background-position: center;
+}
+.container--cta {
+  background: url(../images/bg-snow.png), #FF4646 url(../images/bg-forest.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.container--gifts {
+  background: url(../images/bg-garland.png), #FF4646;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 20px;
+}
+@media (max-width: 1190px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
