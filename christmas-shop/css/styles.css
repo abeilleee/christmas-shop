@@ -728,6 +728,13 @@ svg {
   }
 }
 
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #FF4646;
+  border-radius: 20px;
+}
+
 .hero__box {
   display: flex;
   flex-direction: column;
