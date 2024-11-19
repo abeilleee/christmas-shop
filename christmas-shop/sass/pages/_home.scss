@@ -42,6 +42,16 @@
         height: 528px;
     }
 
+    @media (max-width:1330px) {
+        &__box br {
+            display: none;
+        }
+    
+        &__text {
+            padding-right: 60px;
+        }
+    }
+
     @media (max-width:890px) {
         &__text {
             padding: 46px 60px;
@@ -61,16 +71,6 @@
         &__img {
             width: 100%;
         }
-    }
-}
-
-@media (max-width:1330px) {
-    .about__box br {
-        display: none;
-    }
-
-    .about__text {
-        padding-right: 60px;
     }
 }
 
