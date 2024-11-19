@@ -737,7 +737,7 @@ svg {
   gap: 12px;
 }
 @media (max-width: 650px) {
-  .hero__box__box {
+  .hero__box {
     padding: 60px 0px;
   }
 }
