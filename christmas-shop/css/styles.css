@@ -294,7 +294,7 @@ svg {
   display: flex;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 8px 12px;
+  padding: 8px 12px 12px 12px;
 }
 .timer__container {
   width: 80px;
@@ -412,7 +412,6 @@ svg {
 }
 
 .container {
-  width: 100%;
   max-width: 1440px;
   padding: 0 82px;
   margin: 0 auto;
@@ -842,5 +841,6 @@ svg {
 @media (max-width: 435px) {
   .cta__box {
     width: 100%;
+    margin-bottom: 40px;
   }
 }
