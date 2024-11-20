@@ -17,6 +17,7 @@
     padding: 12px 20px;
     border-radius: 12px;
     cursor: pointer;
+    transition: background-color 0.4s;
 
     &--active {
         color: $static-white;
@@ -27,8 +28,7 @@
 
     @media (hover:hover) {
         &:hover {
-            background-color: $static-white-20;
-            transition: 0.4s;
+            background-color: $static-white-20;            
             border-radius: 12px;
         }
 
