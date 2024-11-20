@@ -22,8 +22,12 @@
     font-weight: 600;
     line-height: 130%;
     letter-spacing: 0.05em;
-    padding: 12px 20px;
     border-radius: 12px;
+
+    &__link {
+        padding: 12px 20px;
+        transition: 0.4s;
+    }
 
     &--active {
         background-color: $primary10-color;
@@ -39,17 +43,15 @@
     }
 
     @media (hover:hover) {
-        &:hover {
+        &:hover a {
+            color: $primary-color;
+        }
+
+        &__link:hover {
             color: $primary-color;
             background-color: $primary10-color;
             border-radius: 12px;
             cursor: pointer;
-            transition: 0.4s;
-        }
-
-        &:hover a {
-            color: $primary-color;
-            transition: 0.4s;
         }
     }
 }

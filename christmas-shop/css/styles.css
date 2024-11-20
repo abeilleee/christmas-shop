@@ -563,8 +563,11 @@ svg {
   font-weight: 600;
   line-height: 130%;
   letter-spacing: 0.05em;
-  padding: 12px 20px;
   border-radius: 12px;
+}
+.list-item__link {
+  padding: 12px 20px;
+  transition: 0.4s;
 }
 .list-item--active {
   background-color: rgba(255, 70, 70, 0.1019607843);
@@ -577,16 +580,14 @@ svg {
   color: #FF4646;
 }
 @media (hover: hover) {
-  .list-item:hover {
+  .list-item:hover a {
+    color: #FF4646;
+  }
+  .list-item__link:hover {
     color: #FF4646;
     background-color: rgba(255, 70, 70, 0.1019607843);
     border-radius: 12px;
     cursor: pointer;
-    transition: 0.4s;
-  }
-  .list-item:hover a {
-    color: #FF4646;
-    transition: 0.4s;
   }
 }
 
