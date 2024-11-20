@@ -39,7 +39,7 @@
     }
 
     &__card h3, &__card p {
-        transition: 0.4s;
+        transition: color 0.4s;
     }
 
     @media (hover:hover) {
@@ -75,7 +75,7 @@
     align-items: center;
 
     & .caption--black {
-        transition: 0.4s;
+        transition: color 0.4s;
     }
 
     @media (hover:hover) {
