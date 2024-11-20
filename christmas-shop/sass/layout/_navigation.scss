@@ -24,6 +24,16 @@
     letter-spacing: 0.05em;
     border-radius: 12px;
 
+    &--active {
+        background-color: $primary10-color;
+        border-radius: 12px;
+        color: $primary-color;
+    }
+
+    &--no-hover {
+        pointer-events: none;
+    }
+
     &__link {
         padding: 12px 20px;
         transition: 0.4s;

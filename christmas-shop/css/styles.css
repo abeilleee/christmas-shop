@@ -253,6 +253,9 @@ svg {
   padding: 20px;
   height: 100%;
 }
+.card h3 {
+  transition: color 0.4s;
+}
 
 .cards-container {
   display: grid;
@@ -278,7 +281,6 @@ svg {
 @media (hover: hover) {
   .card:hover h3 {
     color: #FF4646;
-    transition: 0.4s;
   }
 }
 .timer-wrapper {
@@ -565,6 +567,14 @@ svg {
   line-height: 130%;
   letter-spacing: 0.05em;
   border-radius: 12px;
+}
+.list-item--active {
+  background-color: rgba(255, 70, 70, 0.1019607843);
+  border-radius: 12px;
+  color: #FF4646;
+}
+.list-item--no-hover {
+  pointer-events: none;
 }
 .list-item__link {
   padding: 12px 20px;

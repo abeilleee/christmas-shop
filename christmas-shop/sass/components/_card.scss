@@ -20,6 +20,10 @@
         padding: 20px;
         height: 100%;
     }
+
+    & h3 {
+        transition: color 0.4s;
+    }
 }
 
 .cards-container {
@@ -49,6 +53,5 @@
 @media (hover:hover) {
     .card:hover h3 {
         color: $primary-color;
-        transition: 0.4s;
     }
 }
