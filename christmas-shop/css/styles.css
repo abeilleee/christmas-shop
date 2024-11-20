@@ -219,7 +219,7 @@ svg {
   color: #FFFFFF;
   background-color: #181C29;
   width: 235px;
-  height: 55px;
+  height: 56px;
   padding: 20px 32px;
   cursor: pointer;
   transition: 0.4s;
@@ -829,7 +829,7 @@ main {
     margin: 0 auto;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 656px) {
   .best-gifts__cards {
     grid-template-columns: repeat(1, 1fr);
   }
