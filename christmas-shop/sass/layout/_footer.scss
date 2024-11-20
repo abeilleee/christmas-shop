@@ -96,6 +96,7 @@
     width: 40px;
     height: 40px;
     @include flex;
+    padding: 8px;
 
     & img {
         width: 24px;
