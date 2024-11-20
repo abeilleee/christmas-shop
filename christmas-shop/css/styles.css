@@ -168,6 +168,10 @@ svg {
   border: 1px solid #FFFFFF;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.4s;
+}
+.arrow svg {
+  transition: 0.4s;
 }
 .arrow--active {
   cursor: pointer;
@@ -192,11 +196,9 @@ svg {
 @media (hover: hover) {
   .arrow:hover {
     background-color: #FFFFFF;
-    transition: 0.4s;
   }
   .arrow:hover svg {
     stroke: #FF4646;
-    transition: 0.4s;
   }
 }
 @media (max-width: 769px) {
@@ -219,13 +221,12 @@ svg {
   height: 56px;
   padding: 20px 32px;
   cursor: pointer;
+  transition: 0.4s;
 }
 @media (hover: hover) {
   .button:hover {
     color: #181C29;
     background-color: #FFFFFF;
-    transition: 0.4s;
-    box-shadow: 0 2px 35px 10px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -568,21 +569,9 @@ svg {
 .list-item__link {
   padding: 12px 20px;
   transition: 0.4s;
-}
-.list-item--active {
-  background-color: rgba(255, 70, 70, 0.1019607843);
   border-radius: 12px;
 }
-.list-item--no-hover {
-  pointer-events: none;
-}
-.list-item--active a {
-  color: #FF4646;
-}
 @media (hover: hover) {
-  .list-item:hover a {
-    color: #FF4646;
-  }
   .list-item__link:hover {
     color: #FF4646;
     background-color: rgba(255, 70, 70, 0.1019607843);
@@ -592,7 +581,7 @@ svg {
 }
 
 @media (max-width: 769px) {
-  .list-item-link {
+  .list-item__link {
     font-size: 24px;
     font-weight: 600;
     line-height: 152%;
