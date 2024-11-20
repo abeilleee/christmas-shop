@@ -38,24 +38,21 @@
         height: 80px;
     }
 
-    @media (hover:hover) {
-        &__card:hover {
-            @include transition;
-        }
+    &__card h3, &__card p {
+        transition: 0.4s;
+    }
 
+    @media (hover:hover) {
         &__card:hover a {
             color: $primary-color;
-            @include transition;
         }
 
         &__card:hover p {
             color: $primary-color;
-            @include transition;
         }
 
         &__card:hover h3 {
             color: $primary-color;
-            @include transition;
         }
     }
 
@@ -109,7 +106,6 @@
 
         &:hover svg {
             stroke: $primary-color;
-            @include transition;
         }
     }
 }

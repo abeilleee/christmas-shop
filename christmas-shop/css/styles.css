@@ -634,21 +634,18 @@ svg {
   width: 80px;
   height: 80px;
 }
+.footer__card h3, .footer__card p {
+  transition: 0.4s;
+}
 @media (hover: hover) {
-  .footer__card:hover {
-    transition: 0.4s;
-  }
   .footer__card:hover a {
     color: #FF4646;
-    transition: 0.4s;
   }
   .footer__card:hover p {
     color: #FF4646;
-    transition: 0.4s;
   }
   .footer__card:hover h3 {
     color: #FF4646;
-    transition: 0.4s;
   }
 }
 @media (max-width: 1190px) {
@@ -699,7 +696,6 @@ svg {
   }
   .img-box:hover svg {
     stroke: #FF4646;
-    transition: 0.4s;
   }
 }
 
