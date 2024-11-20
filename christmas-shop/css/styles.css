@@ -212,6 +212,7 @@ svg {
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
+  align-content: center;
   line-height: 130%;
   letter-spacing: 0.05em;
   border-radius: 20px;
@@ -731,7 +732,7 @@ svg {
 main {
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #FF4646;
+  background: linear-gradient(180deg, #FF4646 80%, rgb(255, 255, 255) 100%);
   border-radius: 20px;
 }
 
