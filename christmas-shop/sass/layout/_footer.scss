@@ -74,6 +74,10 @@
     justify-content: space-between;
     align-items: center;
 
+    & .caption--black {
+        transition: 0.4s;
+    }
+
     @media (hover:hover) {
         & .caption--black:hover {
             color: $primary-color;
@@ -96,6 +100,10 @@
     & img {
         width: 24px;
         height: 24px;
+    }
+
+    & svg {
+        transition: stroke 0.4s;
     }
 
     @media (hover:hover) {

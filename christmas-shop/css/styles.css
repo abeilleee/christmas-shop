@@ -665,6 +665,9 @@ svg {
   justify-content: space-between;
   align-items: center;
 }
+.footer__links-box .caption--black {
+  transition: 0.4s;
+}
 @media (hover: hover) {
   .footer__links-box .caption--black:hover {
     color: #FF4646;
@@ -688,6 +691,9 @@ svg {
 .img-box img {
   width: 24px;
   height: 24px;
+}
+.img-box svg {
+  transition: stroke 0.4s;
 }
 @media (hover: hover) {
   .img-box:hover {
