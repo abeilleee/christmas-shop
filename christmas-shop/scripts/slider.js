@@ -20,3 +20,25 @@ const changeOffset = () => {
     offsetChange = Math.round(width >= 768 ? Math.floor(1988.87 - visibleArea) / 3 : Math.floor(1988.87 - visibleArea) / 6);
     offsetMax = Math.round(width >= 768 ? offsetChange * 3 : offsetChange * 6);
 }
+
+const moveLeft = () => {
+    if (offset <= offsetMax) {
+        offset -= offsetChange;
+        ARROW_RIGHT.classList.remove('arrow--disabled');
+    }
+    if (offset === 0) {
+        ARROW_LEFT.classList.add('arrow--disabled');
+    }
+    SLIDER.style.right = `${offset}px`;
+}
+
+const moveRight = () => {
+    if (offset <= offsetMax) {
+        offset += offsetChange;
+    }
+    if (offset === offsetMax) {
+        ARROW_RIGHT.classList.add('arrow--disabled');
+    }
+    SLIDER.style.right = `${offset}px`;
+    ARROW_LEFT.classList.remove('arrow--disabled');
+}
