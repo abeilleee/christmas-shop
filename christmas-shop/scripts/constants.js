@@ -471,4 +471,4 @@ export const cardsArray = [
 export const BURGER = document.querySelector('.header__burger');
 export const HEADER_NAV = document.querySelector('.header__nav')
 export const NAV_LIST = document.querySelector('.nav-list');
-export const LIST_ITEM_LINKS = document.querySelectorAll('.list-item-link');
+export const LIST_ITEM_LINKS = document.querySelectorAll('.list-item__link');

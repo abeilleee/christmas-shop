@@ -575,6 +575,9 @@ svg {
 .list-item--no-hover {
   pointer-events: none;
 }
+.list-item--burger {
+  padding: 12px 20px;
+}
 .list-item__link {
   padding: 12px 20px;
   transition: 0.4s;
