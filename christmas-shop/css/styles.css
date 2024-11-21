@@ -420,30 +420,30 @@ svg {
   margin: 0 auto;
 }
 .container--hero {
-  background: url(../images/bg-snow.png), url(../images/bg-ball.png) #FF4646;
+  background: url(../images/bg-snow.png), url(../images/bg-ball.png);
   background-size: cover;
   background-position: center;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
 .container--about {
-  background: url(../images/bg-snow.png), #FF4646;
+  background: url(../images/bg-snow.png);
   background-size: cover;
   background-position: center;
 }
 .container--slider {
-  background: url(../images/bg-snow.png), #FF4646;
+  background: url(../images/bg-snow.png);
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 .container--best-gifts {
-  background: url(../images/bg-snow.png), #FF4646;
+  background: url(../images/bg-snow.png);
   background-size: cover;
   background-position: center;
 }
 .container--cta {
-  background: url(../images/bg-snow.png), #FF4646 url(../images/bg-forest.png);
+  background: url(../images/bg-snow.png), url(../images/bg-forest.png);
   background-size: cover;
   background-position: center;
   padding-top: 60px;
@@ -730,10 +730,10 @@ svg {
   }
 }
 
-main {
+.main {
   max-width: 1440px;
   margin: 0 auto;
-  background: linear-gradient(180deg, #FF4646 80%, rgb(255, 255, 255) 100%);
+  background: linear-gradient(180deg, #FF4646 99.9%, rgb(255, 255, 255) 100%);
   border-radius: 20px;
 }
 
