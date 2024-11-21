@@ -100,14 +100,15 @@
 
     &__cards {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         gap: 12px;
     }
 
     @media (max-width:1439px) {
         &__cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
+            max-width: 650px;
             margin: 0 auto;
         }
     }
