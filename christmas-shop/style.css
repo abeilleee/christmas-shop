@@ -49,6 +49,7 @@ svg {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     text-transform: uppercase;
+    text-align: center;
     line-height: 130%;
     letter-spacing: 0.05em;
     border-radius: 20px;
@@ -141,6 +142,7 @@ svg {
 
 .header__burger-wrapper {
     display: none;
+
 }
 
 .header__burger {
@@ -284,6 +286,7 @@ svg {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 50%;
     padding: 100px 0px 0px 60px;
     width: 50%;
 }
@@ -538,6 +541,24 @@ a.footer-link {
     padding: 20px;
     cursor: pointer;
 }
+.footer__card:hover {
+    transition: 0.4s;
+}
+
+.footer__card:hover a {
+    color: #FF4646;
+    transition: 0.4s;
+}
+
+.footer__card:hover p {
+    color: #FF4646;
+    transition: 0.4s;
+}
+
+.footer__card:hover h3 {
+    transition: 0.4s;
+    color: #FF4646;
+}
 
 .footer__card img {
     width: 80px;
@@ -564,6 +585,17 @@ a.footer-link {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.img-box:hover {
+    cursor: pointer;
+    stroke: #FF4646;
+}
+
+.img-box:hover svg {
+    stroke: #FF4646;
+    transition: 0.4s;
 }
 
 .img-box img {
@@ -608,6 +640,7 @@ a.footer-link {
     color: #FFFFFF;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
 }
 
 .cards-container {
