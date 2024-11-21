@@ -108,14 +108,8 @@
 
     @media (max-width:1439px) {
         &__cards {
-            max-width: 650px;
+            max-width: 632px;
             margin: 0 auto;
-        }
-    }
-
-    @media (max-width:656px) {
-        &__cards {
-            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
