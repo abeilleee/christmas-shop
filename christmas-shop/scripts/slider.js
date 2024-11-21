@@ -42,3 +42,16 @@ const moveRight = () => {
     SLIDER.style.right = `${offset}px`;
     ARROW_LEFT.classList.remove('arrow--disabled');
 }
+
+window.addEventListener('resize', () => {
+    SLIDER.style.right = 0 + 'px';
+    offset = 0;
+    changeOffset();
+    ARROW_RIGHT.classList.remove('arrow--disabled');
+    ARROW_LEFT.classList.add('arrow--disabled');
+});
+
+ARROW_LEFT.addEventListener('click', (moveLeft));
+ARROW_RIGHT.addEventListener('click', (moveRight));
+
+changeOffset();
