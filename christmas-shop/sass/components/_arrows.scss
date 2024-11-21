@@ -1,0 +1,53 @@
+.arrow {
+    @include flex;
+    width: 56px;
+    height: 56px;
+    border: 1px solid $static-white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+
+    & svg {
+        transition: 0.4s;
+    }
+
+    &--active {
+        cursor: pointer;
+    }
+
+    &--disabled {
+        opacity: 40%;
+        pointer-events: none;
+    }
+
+    &--up {
+        display: none;
+        width: 56px;
+        height: 56px;
+        border: 1px solid $primary-color;
+        background-color: $static-white;
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 8px;
+        bottom: 8px;
+    }
+
+    @media (hover:hover) {
+        &:hover {
+            background-color: $static-white;
+        }
+
+        &:hover svg {
+            stroke: $primary-color;
+        }
+    }
+
+    @media (max-width:769px) {
+        &--up.active {
+            display: flex;
+        }
+    }
+
+}

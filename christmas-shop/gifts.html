@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" href="images/favicon.png">
 </head>
 
@@ -22,130 +22,136 @@
             <div class="header__box">
                 <div class="logo">
                     <a class="logo__link" href="home.html">
-                        <img class="logo__img" src="images/snowflake.png" alt="logo-snowflake">
+                        <img class="logo__img" src="./images/snowflake.png" alt="logo-snowflake">
                         <p class="action-small">the gifts</p>
                     </a>
                 </div>
                 <nav class="header__nav">
                     <ul class="nav-list">
-                        <li class="list-item no-hover list-item--active">
-                            <a class="action-small action-small--active" href="#">gifts</a>
+                        <li class="list-item ">
+                            <a class="list-item__link list-item--no-hover list-item--active action-small action-small--active"
+                                href="#">gifts</a>
                         </li>
                         <li class="list-item">
-                            <a class="action-small action-small--active" href="home.html#about">about</a>
+                            <a class="list-item__link action-small action-small--active"
+                                href="home.html#about">about</a>
                         </li>
                         <li class="list-item">
-                            <a class="action-small action-small--active" href="home.html#best">best</a>
+                            <a class="list-item__link action-small action-small--active" href="home.html#best">best</a>
                         </li>
                         <li class="list-item">
-                            <a class="action-small action-small--active" href="#footer">contacts</a>
+                            <a class="list-item__link action-small action-small--active" href="#footer">contacts</a>
                         </li>
                     </ul>
                 </nav>
+                <div class="header__burger">
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
+                </div>
             </div>
         </div>
     </header>
 
     <section class="gifts">
-        <div class="container container-gifts">
+        <div class="container container--gifts">
             <div class="gifts__wrapper">
                 <div class="gifts__header">
                     <h1 class="title-primary">Achieve health, harmony, and inner strength</h1>
                 </div>
                 <ul class="gifts__tabs">
-                    <li class="list-item tab tab--active">
-                        <a class="action-small action-small--white" href="#">all</a>
+                    <li class="tab tab--all tab--active">
+                        <button class="action-small action-small--white">all</button>
                     </li>
-                    <li class="list-item tab">
-                        <a class="action-small action-small--white" href="#">for work</a>
+                    <li class="tab tab--for-work">
+                        <button class="action-small action-small--white">for work</button>
                     </li>
-                    <li class="list-item tab">
-                        <a class="action-small action-small--white" href="#">for health</a>
+                    <li class="tab tab--for-health">
+                        <button class="action-small action-small--white">for health</button>
                     </li>
-                    <li class="list-item tab">
-                        <a class="action-small action-small--white" href="#">for harmony</a>
+                    <li class="tab tab--for-harmony">
+                        <button class="action-small action-small--white">for harmony</button>
                     </li>
                 </ul>
                 <div class="cards-container">
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-work.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-work.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--purple">For work</h4>
                             <h3 class="title3">Console.log Guru</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-health.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-health.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--green">For health</h4>
                             <h3 class="title3">Step Master</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-work.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-work.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--purple">For work</h4>
                             <h3 class="title3">Bug Magnet</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-work.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-work.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--purple">For work</h4>
                             <h3 class="title3">Shortcut Cheater</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-health.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-health.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--green">For health</h4>
                             <h3 class="title3">Posture Levitation</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-harmony.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-harmony.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--pink">For harmony</h4>
                             <h3 class="title3">Bug Acceptance Guru</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-health.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-health.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--green">For health</h4>
                             <h3 class="title3">Snack Resister</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-harmony.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-harmony.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--pink">For harmony</h4>
                             <h3 class="title3">Error Laugher</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-health.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-health.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--green">For health</h4>
                             <h3 class="title3">Hydration Bot</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-work.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-work.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--purple">For work</h4>
                             <h3 class="title3">Merge Master</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-harmony.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-harmony.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--pink">For harmony</h4>
                             <h3 class="title3">Joy Charger</h3>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card__img" src="images/gift-for-harmony.png" alt="gift-for-work">
+                        <img class="card__img" src="./images/gift-for-harmony.png" alt="gift-for-work">
                         <div class="card__description">
                             <h4 class="title4 title4--pink">For harmony</h4>
                             <h3 class="title3">Spontaneous Coding Philosopher</h3>
@@ -160,23 +166,23 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__cards-box">
-                    <a class="footer-link" href="tel:+375(29)111-22-33">
+                    <a class="footer__link" href="tel:+375(29)111-22-33">
                         <div class="footer__card">
-                            <img src="images/santa-claus.svg" alt="santa-claus">
+                            <img src="./images/santa-claus.svg" alt="santa-claus">
                             <p class="action-large">+375 (29) 111-22-33</p>
                             <h3 class="title3">Call Us</h3>
                         </div>
                     </a>
-                    <a class="footer-link" href="https://maps.app.goo.gl/TV8CokafQsY3ahHeA" target="_blank">
+                    <a class="footer__link" href="https://maps.app.goo.gl/TV8CokafQsY3ahHeA" target="_blank">
                         <div class="footer__card">
-                            <img src="images/christmas-tree.svg" alt="christmas-tree">
+                            <img src="./images/christmas-tree.svg" alt="christmas-tree">
                             <p class="action-large">Magic forest</p>
                             <h3 class="title3">Meet us</h3>
                         </div>
                     </a>
-                    <a class="footer-link" href="mailto:gifts@magic.com">
+                    <a class="footer__link" href="mailto:gifts@magic.com">
                         <div class="footer__card">
-                            <img src="images/snake.svg" alt="snake">
+                            <img src="./images/snake.svg" alt="snake">
                             <p class="action-large">gifts@magic.com</p>
                             <h3 class="title3">write us</h3>
                         </div>

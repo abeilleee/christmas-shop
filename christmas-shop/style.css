@@ -62,13 +62,6 @@ svg {
     cursor: pointer;
 }
 
-.button:hover {
-    color: #181C29;
-    background-color: #FFFFFF;
-    transition: 0.4s;
-    box-shadow: 0 2px 35px 10px rgba(0, 0, 0, 0.3);
-}
-
 .action-large {
     font-size: 24px;
     font-weight: 600;
@@ -121,10 +114,6 @@ svg {
     align-items: center;
 }
 
-.logo:hover {
-    cursor: pointer;
-}
-
 .logo__img {
     width: 24px;
     height: 24px;
@@ -148,28 +137,27 @@ svg {
     line-height: 130%;
     letter-spacing: 0.05em;
     padding: 12px 20px;
-}
-
-.list-item--active {
-    background-color: rgb(255, 70, 70, 0.1);
     border-radius: 12px;
 }
 
-.list-item--active a {
-    color: #FF4646;
+.header__burger-wrapper {
+    display: none;
+
 }
 
-.list-item:hover {
-    color: #FF4646;
-    background-color: rgb(255, 70, 70, 0.1);
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.4s;
+.header__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 40px;
+    height: 40px;
 }
 
-.list-item:hover a {
-    color: #FF4646;
-    transition: 0.4s;
+.burger-line {
+    width: 20px;
+    border: 1px solid #181C29;
 }
 
 .no-hover {
@@ -300,6 +288,7 @@ svg {
     gap: 20px;
     width: 50%;
     padding: 100px 0px 0px 60px;
+    width: 50%;
 }
 
 .about__img {
@@ -385,12 +374,6 @@ svg {
     opacity: 40%;
 }
 
-.arrow--active:hover {
-    background-color: #FFFFFF;
-    transition: 0.4s;
-}
-
-
 .container-best-gifts {
     background: url(images/bg-snow.png), #FF4646;
     background-size: cover;
@@ -429,11 +412,6 @@ svg {
     width: 310px;
     height: 342px;
     cursor: pointer;
-}
-
-.card:hover h3 {
-    color: #FF4646;
-    transition: 0.4s;
 }
 
 .card__img {
@@ -563,7 +541,6 @@ a.footer-link {
     padding: 20px;
     cursor: pointer;
 }
-
 .footer__card:hover {
     transition: 0.4s;
 }
@@ -596,11 +573,6 @@ a.footer-link {
     align-items: center;
 }
 
-.footer__links-box .caption--black:hover {
-    color: #FF4646;
-    cursor: pointer;
-}
-
 .links {
     display: flex;
     flex-direction: row;
@@ -615,6 +587,7 @@ a.footer-link {
     justify-content: center;
 }
 
+
 .img-box:hover {
     cursor: pointer;
     stroke: #FF4646;
@@ -628,11 +601,6 @@ a.footer-link {
 .img-box img {
     width: 24px;
     height: 24px;
-}
-
-.arrow--active:hover svg {
-    stroke: red;
-    transition: 0.4s;
 }
 
 .icon {
@@ -658,7 +626,6 @@ a.footer-link {
     gap: 20px;
 }
 
-
 .gifts__header h1 {
     text-align: center;
     width: 426px;
@@ -669,16 +636,6 @@ a.footer-link {
     gap: 8px;
 }
 
-.tab:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: 0.4s;
-}
-
-.tab:hover a {
-    color: #FFFFFF;
-    transition: 0.4s;
-}
-
 .tab--active {
     color: #FFFFFF;
     border-radius: 12px;
@@ -687,7 +644,198 @@ a.footer-link {
 }
 
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
+}
+
+@media (hover:hover) {
+    .logo:hover {
+        cursor: pointer;
+    }
+
+    .button:hover {
+        color: #181C29;
+        background-color: #FFFFFF;
+        transition: 0.4s;
+        box-shadow: 0 2px 35px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .list-item:hover {
+        color: #FF4646;
+        background-color: rgb(255, 70, 70, 0.1);
+        border-radius: 12px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .list-item:hover a {
+        color: #FF4646;
+        transition: 0.4s;
+    }
+
+    .tab:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: 0.4s;
+        border-radius: 12px;
+    }
+
+    .tab:hover a {
+        color: #FFFFFF;
+        transition: 0.4s;
+    }
+
+    .arrow--active:hover {
+        background-color: #FFFFFF;
+        transition: 0.4s;
+    }
+
+    .card:hover h3 {
+        color: #FF4646;
+        transition: 0.4s;
+    }
+
+    .footer__card:hover {
+        transition: 0.4s;
+    }
+
+    .footer__card:hover a {
+        color: #FF4646;
+        transition: 0.4s;
+    }
+
+    .footer__card:hover p {
+        color: #FF4646;
+        transition: 0.4s;
+    }
+
+    .footer__card:hover h3 {
+        transition: 0.4s;
+        color: #FF4646;
+    }
+
+    .footer__links-box .caption--black:hover {
+        color: #FF4646;
+        cursor: pointer;
+    }
+
+    .img-box:hover {
+        cursor: pointer;
+        stroke: #FF4646;
+    }
+
+    .img-box:hover svg {
+        stroke: #FF4646;
+        transition: 0.4s;
+    }
+
+    .arrow--active:hover svg {
+        stroke: red;
+        transition: 0.4s;
+    }
+}
+
+@media (max-width:1439px) {
+    .best-gifts__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width:1330px) {
+    .about__box br {
+        display: none;
+    }
+
+    .about__text {
+        padding-right: 60px;
+    }
+}
+
+@media (max-width:1190px) {
+    .footer__cards-box {
+        flex-direction: column;
+    }
+
+    .container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+@media (max-width:1000px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:890px) {
+    .about__text {
+        padding: 46px 60px;
+    }
+}
+
+@media (max-width:769px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header__burger {
+        display: flex;
+    }
+}
+
+@media (max-width:650px) {
+    .best-gifts__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hero__box {
+        padding: 60px 0px;
+    }
+
+    .about__box {
+        flex-direction: column;
+    }
+
+    .about__text {
+        width: 100%;
+        padding: 0 20px 60px 20px;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tab {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 0.05em;
+        padding: 12px 8px;
+    }
+}
+
+@media (max-width:435px) {
+    .cta__box {
+        width: 100%;
+    }
+
+    .gifts__header h1 {
+        width: 100%;
+    }
+
+    .gifts__tabs {
+        gap: 0px;
+    }
 }
