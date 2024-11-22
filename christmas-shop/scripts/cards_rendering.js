@@ -70,8 +70,39 @@ export const generateRandomCards = (container, amountOfCards) => {
         cardNew = createCard(cardNew, i);
         setColorTitle(cardsArray, i, cardNew, 'card');
         setImage(cardNew, i, 'card__img');
-        console.log(cardNew);
         container.appendChild(cardNew);
     }
 }
 
+//Генерация карточек
+export const generateCards = (container, start, end) => {
+    container.innerHTML = '';
+    for (let i = start; i < end; i++) {
+        let cardNew = createCardTemplate();
+        cardNew.setAttribute('id', i);
+        cardNew = createCard(cardNew, i);
+        setColorTitle(cardsArray, i, cardNew, 'card');
+        setImage(cardNew, i, 'card__img');
+        container.appendChild(cardNew);
+    }
+}
+
+//Генерация карточек по категориям
+export const generateCategoryOfCards = (tab, container) => {
+    let start;
+    let end;
+
+    if (tab === 'work') {
+        start = 0;
+        end = 12;
+    } else if (tab === 'health') {
+        start = 12;
+        end = 24;
+    } else if (tab === 'harmony') {
+        start = 24;
+        end = 36;
+    } else if (tab === 'all') {
+        return generateRandomCards(container, 36);
+    }
+    return generateCards(container, start, end);
+}
