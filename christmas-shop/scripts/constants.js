@@ -474,6 +474,8 @@ export const NAV_LIST = document.querySelector('.nav-list');
 export const LIST_ITEM_LINKS = document.querySelectorAll('.list-item__link');
 export const LIST_ITEM = document.querySelectorAll('.list-item');
 
+export const CARDS_BOX = document.querySelector('.best-gifts__cards');
+
 export const SLIDER = document.querySelector('.slider');
 export const ARROW_RIGHT = document.querySelector('.arrow-right');
 export const ARROW_LEFT = document.querySelector('.arrow-left');

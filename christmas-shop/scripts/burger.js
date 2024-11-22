@@ -4,8 +4,6 @@ import { NAV_LIST } from "../scripts/constants.js";
 import { LIST_ITEM_LINKS } from "../scripts/constants.js";
 import { LIST_ITEM } from "../scripts/constants.js";
 
-console.log(LIST_ITEM);
-
 const togglerOpen = (element) => {
     element.classList.toggle('open');
 }
