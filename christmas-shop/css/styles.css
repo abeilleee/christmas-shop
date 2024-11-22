@@ -488,6 +488,7 @@ svg {
   gap: 8px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 .header__burger-line {
   width: 20px;
@@ -821,13 +822,13 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
   gap: 12px;
 }
 @media (max-width: 1439px) {
   .best-gifts__cards {
     max-width: 650px;
     margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 656px) {
