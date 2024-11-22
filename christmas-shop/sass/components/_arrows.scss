@@ -34,6 +34,12 @@
         bottom: 8px;
     }
 
+    @media (max-width: 769px) {
+        &--up.active {
+            display: flex;
+        }
+    }
+
     @media (hover:hover) {
         &:hover {
             background-color: $static-white;
