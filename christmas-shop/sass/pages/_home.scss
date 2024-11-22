@@ -101,8 +101,7 @@
     &__cards {
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        align-items: center;        
         gap: 12px;
     }
 
@@ -110,6 +109,7 @@
         &__cards {
             max-width: 632px;
             margin: 0 auto;
+            flex-wrap: wrap;
         }
     }
 }
