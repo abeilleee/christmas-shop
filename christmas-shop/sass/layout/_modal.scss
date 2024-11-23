@@ -95,4 +95,10 @@
         width: 16px;
         height: 16px;
     }
+
+    & svg {
+        fill: $primary10-color;
+        stroke: none;
+    }
+    
 }

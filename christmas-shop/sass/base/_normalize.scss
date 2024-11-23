@@ -11,6 +11,14 @@ body {
 
 body.hidden {
     overflow: hidden;
+
+    @media (min-width: 769px) {
+        margin-right: 17px;
+    }
+
+    @media (max-width: 768px) {
+        margin-right: -1px;
+    }
 }
 
 a,

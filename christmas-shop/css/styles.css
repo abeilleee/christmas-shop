@@ -12,6 +12,16 @@ body {
 body.hidden {
   overflow: hidden;
 }
+@media (min-width: 769px) {
+  body.hidden {
+    margin-right: 17px;
+  }
+}
+@media (max-width: 768px) {
+  body.hidden {
+    margin-right: -1px;
+  }
+}
 
 a,
 a:link,
@@ -808,6 +818,10 @@ svg {
 .snowflakes img {
   width: 16px;
   height: 16px;
+}
+.snowflakes svg {
+  fill: rgba(255, 70, 70, 0.1019607843);
+  stroke: none;
 }
 
 .gifts__wrapper {

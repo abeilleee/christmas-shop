@@ -488,3 +488,7 @@ export const TAB_FOR_HEALTH = document.querySelector('.tab--for-health');
 export const TAB_FOR_HARMONY = document.querySelector('.tab--for-harmony');
 
 export const ARROW_UP = document.querySelector('.arrow--up');
+
+export const BTN_CLOSE_MODAL = document.querySelector('.modal__btn-close');
+export const MODAL_WRAPPER = document.querySelector('.modal__wrapper');
+export const MODAL = document.querySelector('.modal');
