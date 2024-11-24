@@ -23,7 +23,6 @@ if (document.body.contains(CARDS_CONTAINER)) {
 };
 
 
-
 const createModalWindow = (array, id) => {
     let modal = document.createElement('div');
     modal.classList.add('modal__card');
@@ -32,7 +31,7 @@ const createModalWindow = (array, id) => {
                 <div class="modal__description">
                     <h4 class="title4 title-card">${array[id].category}</h4>
                     <h3 class="title3">${array[id].name}</h3>
-                    <p class="description">${array[id].description}.</p>
+                    <p class="description">${array[id].description}</p>
                 </div>
                 <div class="modal__box">
                     <h4 class="title4">Adds superpowers to:</h4>
@@ -40,28 +39,28 @@ const createModalWindow = (array, id) => {
                         <div class="superpowers-box__element">
                             <p class="power description">Live</p>
                             <div class="scores-box">
-                                <p class="scores description">+500</p>
+                                <p class="scores description">${array[id].superpowers.live}</p>
                                 <div class="scores___live snowflakes"></div>
                             </div>
                         </div>
                         <div class="superpowers-box__element">
                             <p class="superpowers-box__create description">Create</p>
                             <div class="scores-box">
-                                <p class="scores description">+500</p>
+                                <p class="scores description">${array[id].superpowers.create}</p>
                                 <div class="scores___create snowflakes"></div>
                             </div>
                         </div>
                         <div class="superpowers-box__element">
                             <p class="superpowers-box__love description">Love</p>
                             <div class="scores-box">
-                                <p class="scores description">+200</p>
+                                <p class="scores description">${array[id].superpowers.love}</p>
                                 <div class="scores___love snowflakes"></div>
                             </div>
                         </div>
                         <div class="superpowers-box__element">
                             <p class="superpowers-box__dream description">Dream</p>
                             <div class="scores-box">
-                                <p class="scores description">+400</p>
+                                <p class="scores description">${array[id].superpowers.dream}</p>
                                 <div class="scores___dream snowflakes"></div>
                             </div>
                         </div>
@@ -102,39 +101,65 @@ const addSnowfalls = (modal, category) => {
     for (let i = 0; i < 5; i++) {
         elem.insertAdjacentHTML('beforeend', svgHtml);
     }
+
     let modalId = modal.getAttribute('id');
     let arr = elem.children;
 
-    let liveScores = cardsArray[modalId].superpowers.live / 100;
-    let createScores = cardsArray[modalId].superpowers.create / 100;
-    let loveScores = cardsArray[modalId].superpowers.love / 100;
-    let dreamScores = cardsArray[modalId].superpowers.dream / 100;
+    const liveScores = cardsArray[modalId].superpowers.live / 100;
+    const createScores = cardsArray[modalId].superpowers.create / 100;
+    const loveScores = cardsArray[modalId].superpowers.love / 100;
+    const dreamScores = cardsArray[modalId].superpowers.dream / 100;
 
-    console.log(modalId);
- 
-    console.log(arr[0])
-
-    // for (let i = 0; i < liveScores; i++) {
-    //     arr[0][i].style.stroke = 'red';
-    // }
+    if (category === 'live') {
+        for (let i = 0; i < liveScores; i++) {
+            arr[i].style.fill = '#FF4646';
+        }
+    } else if (category === 'create') {
+        for (let i = 0; i < createScores; i++) {
+            arr[i].style.fill = '#FF4646';
+        }
+    } else if (category === 'love') {
+        for (let i = 0; i < loveScores; i++) {
+            arr[i].style.fill = '#FF4646';
+        }
+    } else if (category === 'dream') {
+        for (let i = 0; i < dreamScores; i++) {
+            arr[i].style.fill = '#FF4646';
+        }
+    }
 }
 
 
 
-const setScores = (modal, category) => {
-    const elem = modal.querySelector(`.scores___${category}`);  //Выбираю определенную категорию баллов
-    let modalId = modal.getAttribute('id');
+// const setScores = (array, modal, category) => {
+//     const elem = modal.querySelector(`.scores___${category}`);  //Выбираю определенную категорию баллов
+//     let cardId = modal.getAttribute('id');
 
-    let liveScores = cardsArray[modalId].superpowers.category / 100;
-    let createScores = cardsArray[modalId].superpowers.create / 100;
-    let loveScores = cardsArray[modalId].superpowers.love / 100;
-    let dreamScores = cardsArray[modalId].superpowers.dream / 100;
+//     const liveScores = array[cardId].superpowers.live / 100;
+//     const createScores = array[cardId].superpowers.create / 100;
+//     const loveScores = array[cardId].superpowers.love / 100;
+//     const dreamScores = array[cardId].superpowers.dream / 100;
 
-    const arr = elem.children;
-}
+//     console.log('id: ' + modalId);
 
-
-
+//     if (category === 'live') {
+//         for (let i = 0; i < liveScores; i++) {
+//             arr[i].style.fill = '#FF4646';
+//         }
+//     } else if (category === 'create') {
+//         for (let i = 0; i < createScores; i++) {
+//             arr[i].style.fill = '#FF4646';
+//         }
+//     } else if (category === 'love') {
+//         for (let i = 0; i < loveScores; i++) {
+//             arr[i].style.fill = '#FF4646';
+//         }
+//     } else if (category === 'dream') {
+//         for (let i = 0; i < dreamScores; i++) {
+//             arr[i].style.fill = '#FF4646';
+//         }
+//     }
+// }
 
 const toggleClass = (element) => {
     element.classList.toggle('open');
