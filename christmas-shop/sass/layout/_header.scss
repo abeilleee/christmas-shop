@@ -85,6 +85,10 @@
         letter-spacing: 0.05em;
     }
 
+    &__svg {
+        stroke: none;
+    }
+
     @media (hover:hover) {
         &:hover {
             cursor: pointer;
