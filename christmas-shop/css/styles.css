@@ -542,6 +542,9 @@ svg {
   line-height: 130%;
   letter-spacing: 0.05em;
 }
+.logo__svg {
+  stroke: none;
+}
 @media (hover: hover) {
   .logo:hover {
     cursor: pointer;
