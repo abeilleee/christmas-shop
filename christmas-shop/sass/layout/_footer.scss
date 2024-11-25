@@ -56,7 +56,7 @@
         }
     }
 
-    @media (max-width:1190px) {
+    @media screen and (max-width:1190px) {
         &__cards-box {
             flex-direction: column;
         }

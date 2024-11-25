@@ -6,7 +6,7 @@
         display: flex;
     }
 
-    @media (max-width:769px) {
+    @media screen and (max-width:769px) {
         & {
             display: none;
             flex-direction: column;
@@ -50,7 +50,7 @@
     }
 }
 
-@media (max-width:769px) {
+@media screen and (max-width:769px) {
     .list-item__link {
         font-size: 24px;
         font-weight: 600;

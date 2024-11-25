@@ -44,7 +44,7 @@
         border-radius: 20px;
     }
 
-    @media (max-width:1190px) {
+    @media screen and (max-width:1190px) {
         & {
             padding-left: 8px;
             padding-right: 8px;

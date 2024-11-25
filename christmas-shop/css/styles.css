@@ -204,7 +204,7 @@ svg {
     stroke: #FF4646;
   }
 }
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .arrow--up.active {
     display: flex;
   }
@@ -264,17 +264,17 @@ svg {
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
-@media (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .cards-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -376,7 +376,7 @@ svg {
   display: flex;
   gap: 8px;
 }
-@media (max-width: 435px) {
+@media screen and (max-width: 435px) {
   .gifts__tabs {
     gap: 0px;
   }
@@ -407,7 +407,7 @@ svg {
     cursor: pointer;
   }
 }
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .tab {
     font-size: 12px;
     font-weight: 600;
@@ -462,7 +462,7 @@ svg {
   background-position: top;
   border-radius: 20px;
 }
-@media (max-width: 1190px) {
+@media screen and (max-width: 1190px) {
   .container {
     padding-left: 8px;
     padding-right: 8px;
@@ -509,7 +509,7 @@ svg {
   translate: 0px -5px;
   transition: all 0.5s;
 }
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .header__nav {
     display: flex;
     position: fixed;
@@ -558,7 +558,7 @@ svg {
 .nav-list.open {
   display: flex;
 }
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .nav-list {
     display: none;
     flex-direction: column;
@@ -597,7 +597,7 @@ svg {
   }
 }
 
-@media (max-width: 769px) {
+@media screen and (max-width: 769px) {
   .list-item__link {
     font-size: 24px;
     font-weight: 600;
@@ -655,7 +655,7 @@ svg {
     color: #FF4646;
   }
 }
-@media (max-width: 1190px) {
+@media screen and (max-width: 1190px) {
   .footer__cards-box {
     flex-direction: column;
   }
@@ -732,7 +732,7 @@ svg {
   text-align: center;
   width: 426px;
 }
-@media (max-width: 442px) {
+@media screen and (max-width: 442px) {
   .gifts__header h1 {
     width: 100%;
   }
@@ -753,7 +753,7 @@ svg {
   padding: 60px 60px;
   gap: 12px;
 }
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .hero__box {
     padding: 60px 0px;
   }
@@ -785,7 +785,7 @@ svg {
   width: 50%;
   height: 528px;
 }
-@media (max-width: 1330px) {
+@media screen and (max-width: 1330px) {
   .about__box br {
     display: none;
   }
@@ -793,12 +793,12 @@ svg {
     padding-right: 60px;
   }
 }
-@media (max-width: 890px) {
+@media screen and (max-width: 890px) {
   .about__text {
     padding: 46px 60px;
   }
 }
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .about__box {
     flex-direction: column;
   }
@@ -831,14 +831,14 @@ svg {
   align-items: center;
   gap: 12px;
 }
-@media (max-width: 1439px) {
+@media screen and (max-width: 1439px) {
   .best-gifts__cards {
     max-width: 650px;
     margin: 0 auto;
     flex-wrap: wrap;
   }
 }
-@media (max-width: 656px) {
+@media screen and (max-width: 656px) {
   .best-gifts__cards {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -857,7 +857,7 @@ svg {
 .cta__box > h2 {
   text-align: center;
 }
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .cta__box {
     width: 100%;
     margin-bottom: 37px;
