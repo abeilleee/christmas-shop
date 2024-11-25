@@ -196,7 +196,7 @@ svg {
   right: 8px;
   bottom: 8px;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .arrow:hover {
     background-color: #FFFFFF;
   }
@@ -227,7 +227,7 @@ svg {
   cursor: pointer;
   transition: 0.4s;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .button:hover {
     color: #181C29;
     background-color: #FFFFFF;
@@ -280,7 +280,7 @@ svg {
   }
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .card:hover h3 {
     color: #FF4646;
   }
@@ -398,7 +398,7 @@ svg {
   background-color: rgba(255, 255, 255, 0.2);
   pointer-events: none;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .tab:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 12px;
@@ -545,7 +545,7 @@ svg {
 .logo__svg {
   stroke: none;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .logo:hover {
     cursor: pointer;
   }
@@ -588,7 +588,7 @@ svg {
   transition: 0.4s;
   border-radius: 12px;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .list-item__link:hover {
     color: #FF4646;
     background-color: rgba(255, 70, 70, 0.1019607843);
@@ -644,7 +644,7 @@ svg {
 .footer__card h3, .footer__card p {
   transition: color 0.4s;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .footer__card:hover a {
     color: #FF4646;
   }
@@ -675,7 +675,7 @@ svg {
 .footer__links-box .caption--black {
   transition: color 0.4s;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .footer__links-box .caption--black:hover {
     color: #FF4646;
     cursor: pointer;
@@ -703,7 +703,7 @@ svg {
 .img-box svg {
   transition: stroke 0.4s;
 }
-@media (hover: hover) {
+@media (hover: hover) and (pointer: fine) {
   .img-box:hover {
     cursor: pointer;
     stroke: #FF4646;
