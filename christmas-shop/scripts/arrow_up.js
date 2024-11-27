@@ -1,7 +1,6 @@
 import { ARROW_UP } from "./constants.js";
 
 const screenHeight = document.documentElement.clientHeight;
-const halfScreenHeight = screenHeight / 2;
 
 const goUp = () => {
     if (window.scrollY > 0) {
@@ -12,9 +11,10 @@ const goUp = () => {
 ARROW_UP.addEventListener(('click'), (goUp));
 
 window.addEventListener(('scroll'), () => {
-    if (window.scrollY > halfScreenHeight)
+    if (window.scrollY > 300)
         ARROW_UP.classList.add('active');
-    else if (window.scrollY < halfScreenHeight) {
+    else if (window.scrollY < 300) {
         ARROW_UP.classList.remove('active');
     }
+    console.log(window.scrollY);
 })
