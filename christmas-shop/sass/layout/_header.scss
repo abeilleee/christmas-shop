@@ -10,7 +10,7 @@
     &__nav.open {
         display: flex;
         right: 0px;
-        transition: all 0.5s;
+        transition: all 0.8s;
     }
 
     &__burger-wrapper {
@@ -56,7 +56,7 @@
             height: 100vh;
             justify-content: center;
             background-color: $static-white;
-            transition: all 0.5s;
+            transition: all 0.8s;
         }
 
         &__burger {

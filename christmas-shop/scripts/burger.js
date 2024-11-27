@@ -6,6 +6,9 @@ import { LIST_ITEM } from "../scripts/constants.js";
 import { LIST_ITEM_ACTIVE } from "../scripts/constants.js";
 
 
+
+
+
 const togglerOpen = (element) => {
     element.classList.toggle('open');
 }
@@ -41,5 +44,7 @@ window.addEventListener(('resize'), () => {
     if (document.documentElement.clientWidth > 768) {
         LIST_ITEM.forEach((elem) => elem.classList.remove('list-item--burger'));
         document.body.classList.remove('hidden');
+    } else if (NAV_LIST.classList.contains('open') && document.documentElement.clientWidth < 768) {
+        LIST_ITEM.forEach((elem) => elem.classList.add('list-item--burger'));
     }
 });

@@ -490,7 +490,7 @@ svg {
 .header__nav.open {
   display: flex;
   right: 0px;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 .header__burger-wrapper {
   display: none;
@@ -530,7 +530,7 @@ svg {
     height: 100vh;
     justify-content: center;
     background-color: #FFFFFF;
-    transition: all 0.5s;
+    transition: all 0.8s;
   }
   .header__burger {
     display: flex;
