@@ -12,13 +12,14 @@ body {
 body.hidden {
     overflow: hidden;
 
-    @media screen and (min-width: 769px) {
-        margin-right: 17px;
-    }
+    // @media screen and (min-width: 769px) {
+    //     // margin-right: 17px;
+    //     margin-right: calc(100vw - 100%)
+    // }
 
-    @media screen and (max-width: 768px) {
-        margin-right: -1px;
-    }
+    // @media screen and (max-width: 768px) {
+    //     margin-right: -1px;
+    // }
 }
 
 a,

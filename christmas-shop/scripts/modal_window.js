@@ -6,6 +6,8 @@ import { CARDS_CONTAINER } from "./constants.js";
 import { CARDS_BOX } from "./constants.js";
 import { setColorTitle } from "./cards_rendering.js";
 
+
+
 let cardId;
 
 if (document.body.contains(CARDS_BOX)) {
@@ -166,9 +168,11 @@ const toggleClass = (element) => {
 }
 
 let child;
+let widthOfscroll = window.innerWidth - document.documentElement.clientWidth;
 
 const openModal = (event) => {
     const { target } = event;
+    // document.querySelector('.hidden').style.paddingRight = `${widthOfscroll}px`;
 
     if (target.closest('.card')) {
         toggleClass(MODAL_WRAPPER);
