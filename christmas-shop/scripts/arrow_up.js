@@ -16,5 +16,4 @@ window.addEventListener(('scroll'), () => {
     else if (window.scrollY < 300) {
         ARROW_UP.classList.remove('active');
     }
-    console.log(window.scrollY);
 })
