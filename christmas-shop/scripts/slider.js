@@ -17,8 +17,8 @@ const changeOffset = () => {
     } else if (width < 1190) {
         visibleArea = width - 16;
     }
-    offsetChange = Math.round(width >= 768 ? Math.floor(1988.87 - visibleArea) / 3 : Math.floor(1988.87 - visibleArea) / 6);
-    offsetMax = Math.round(width >= 768 ? offsetChange * 3 : offsetChange * 6);
+    offsetChange = Math.round(width > 768 ? Math.floor(1988.87 - visibleArea) / 3 : Math.floor(1988.87 - visibleArea) / 6);
+    offsetMax = Math.round(width > 768 ? offsetChange * 3 : offsetChange * 6);
 }
 
 const moveLeft = () => {
