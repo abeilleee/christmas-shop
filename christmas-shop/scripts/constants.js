@@ -473,6 +473,7 @@ export const HEADER_NAV = document.querySelector('.header__nav')
 export const NAV_LIST = document.querySelector('.nav-list');
 export const LIST_ITEM_LINKS = document.querySelectorAll('.list-item__link');
 export const LIST_ITEM = document.querySelectorAll('.list-item');
+export const LIST_ITEM_ACTIVE = document.querySelector('.list-item--active-burger');
 
 export const CARDS_BOX = document.querySelector('.best-gifts__cards');
 

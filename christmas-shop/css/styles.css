@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -925,7 +926,7 @@ svg {
 .best-gifts__box {
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
+  padding-top: 59px;
   padding-bottom: 60px;
   gap: 20px;
 }
