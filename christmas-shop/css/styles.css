@@ -528,6 +528,10 @@ svg {
     position: relative;
     z-index: 2;
   }
+  .header__burger.fixed {
+    position: fixed;
+    right: 8px;
+  }
 }
 
 .logo__link {

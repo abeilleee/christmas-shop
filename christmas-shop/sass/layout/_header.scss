@@ -64,6 +64,12 @@
             display: flex;
             position: relative;
             z-index: 2;
+
+
+            &.fixed {
+                position: fixed;
+                right: 8px;
+            }
         }
     }
 }
