@@ -6,6 +6,10 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   border: none;
 }
