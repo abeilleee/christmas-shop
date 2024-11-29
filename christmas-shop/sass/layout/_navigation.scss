@@ -34,6 +34,10 @@
         pointer-events: none;
     }
 
+    &--burger{
+        padding: 12px 20px;
+    }
+
     &__link {
         padding: 12px 20px;
         transition: 0.4s;

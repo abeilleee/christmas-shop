@@ -37,6 +37,11 @@
         right: 8px;
         bottom: 8px;
     }
+    @media screen and (max-width: 769px) {
+        &--up.active {
+            display: flex;
+        }
+    }
 
     @media (hover:hover) and (pointer:fine) {
         &:hover {

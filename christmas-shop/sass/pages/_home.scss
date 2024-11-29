@@ -5,6 +5,10 @@
     border-radius: 20px;
 }
 
+.hidden{
+    display: block !important;  //от injected styles в chrome
+}
+
 .hero__box {
     @include flex-column;
     justify-content: center;
@@ -101,21 +105,15 @@
     &__cards {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;        
         gap: 12px;
     }
 
     @media screen and (max-width:1439px) {
         &__cards {
-            max-width: 650px;
+            max-width: 632px;
             margin: 0 auto;
             flex-wrap: wrap;
-        }
-    }
-
-    @media screen and (max-width:656px) {
-        &__cards {
-            grid-template-columns: repeat(1, 1fr);
         }
     }
 }
@@ -132,11 +130,7 @@
     &>h2 {
         text-align: center;
     }
-
-    & .title2{
-        line-height: 151%;;
-    }
-
+  
     @media screen and (max-width:450px) {
         & {
             width: 100%;
