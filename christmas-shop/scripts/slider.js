@@ -8,9 +8,6 @@ let offsetMax;
 let visibleArea;
 let offset = 0;
 
-console.log(document.documentElement.clientWidth)
-console.log(window.innerWidth)
-
 const changeOffset = () => {
     let width = document.documentElement.clientWidth;
     if (width >= 1440) {
