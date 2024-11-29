@@ -48,7 +48,7 @@
     }
 }
 
-@media (hover:hover) {
+@media (hover:hover) and (pointer:fine) {
     .card:hover h3 {
         color: $primary-color;
     }

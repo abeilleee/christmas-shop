@@ -16,8 +16,12 @@
     }
 
     &--disabled {
-        opacity: 40%;
+        border: 1px solid $static-white-40;
         pointer-events: none;
+    }
+
+    &--disabled svg{
+        stroke: $static-white-40;
     }
 
     &--up {
@@ -33,14 +37,13 @@
         right: 8px;
         bottom: 8px;
     }
-
     @media screen and (max-width: 769px) {
         &--up.active {
             display: flex;
         }
     }
 
-    @media (hover:hover) {
+    @media (hover:hover) and (pointer:fine) {
         &:hover {
             background-color: $static-white;
         }

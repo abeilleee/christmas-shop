@@ -38,11 +38,12 @@
         height: 80px;
     }
 
-    &__card h3, &__card p {
+    &__card h3,
+    &__card p {
         transition: color 0.4s;
     }
 
-    @media (hover:hover) {
+    @media (hover:hover) and (pointer:fine) {
         &__card:hover a {
             color: $primary-color;
         }
@@ -56,7 +57,7 @@
         }
     }
 
-    @media (max-width:1190px) {
+    @media screen and (max-width:1190px) {
         &__cards-box {
             flex-direction: column;
         }
@@ -78,7 +79,7 @@
         transition: color 0.4s;
     }
 
-    @media (hover:hover) {
+    @media (hover:hover) and (pointer:fine) {
         & .caption--black:hover {
             color: $primary-color;
             cursor: pointer;
@@ -107,7 +108,7 @@
         transition: stroke 0.4s;
     }
 
-    @media (hover:hover) {
+    @media (hover:hover) and (pointer:fine) {
         &:hover {
             cursor: pointer;
             stroke: $primary-color;
