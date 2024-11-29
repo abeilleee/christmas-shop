@@ -190,7 +190,7 @@ svg {
   stroke: rgba(255, 255, 255, 0.4);
 }
 .arrow--up {
-  display: none;
+  display: flex;
   width: 56px;
   height: 56px;
   border: 1px solid #FF4646;
@@ -200,11 +200,12 @@ svg {
   align-items: center;
   position: fixed;
   right: 8px;
-  bottom: 8px;
+  bottom: -100%;
+  transition: all 0.3s;
 }
 @media screen and (max-width: 769px) {
   .arrow--up.active {
-    display: flex;
+    bottom: 8px;
   }
 }
 @media (hover: hover) and (pointer: fine) {
