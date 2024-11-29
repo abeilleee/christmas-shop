@@ -22,12 +22,10 @@ TAB_ALL.addEventListener(('click'), (event) => {
 })
 
 TAB_FOR_WORK.addEventListener(('click'), (event) => {
-    console.log('hi')
     TAB_FOR_WORK.classList.add('tab--active');
     removeClass(TAB_ALL);
     removeClass(TAB_FOR_HEALTH);
     removeClass(TAB_FOR_HARMONY);
-    console.log(generateCategoryOfCards('work', CARDS_CONTAINER));
 })
 
 TAB_FOR_HEALTH.addEventListener(('click'), (event) => {
