@@ -26,6 +26,7 @@ TAB_FOR_WORK.addEventListener(('click'), (event) => {
     removeClass(TAB_ALL);
     removeClass(TAB_FOR_HEALTH);
     removeClass(TAB_FOR_HARMONY);
+    generateCategoryOfCards('work', CARDS_CONTAINER);
 })
 
 TAB_FOR_HEALTH.addEventListener(('click'), (event) => {
