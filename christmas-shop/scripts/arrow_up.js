@@ -1,7 +1,5 @@
 import { ARROW_UP } from "./constants.js";
 
-const screenHeight = document.documentElement.clientHeight;
-
 const goUp = () => {
     if (window.scrollY > 0) {
         window.scrollTo({ top: 0, left: 0, behaviour: "auto" });
