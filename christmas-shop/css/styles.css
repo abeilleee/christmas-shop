@@ -9,8 +9,13 @@ body {
   border: none;
 }
 
-body.hidden {
+.hidden {
+  display: block !important;
   overflow: hidden;
+}
+
+.open-modal {
+  margin-right: 0px;
 }
 
 a,
@@ -196,7 +201,6 @@ svg {
   right: 8px;
   bottom: 8px;
 }
-
 @media screen and (max-width: 769px) {
   .arrow--up.active {
     display: flex;
@@ -558,7 +562,6 @@ svg {
 .logo__svg {
   stroke: none;
 }
-
 @media (hover: hover) and (pointer: fine) {
   .logo:hover {
     cursor: pointer;
@@ -864,10 +867,6 @@ svg {
   border-radius: 20px;
 }
 
-.hidden {
-  display: block !important;
-}
-
 .hero__box {
   display: flex;
   flex-direction: column;
@@ -975,7 +974,6 @@ svg {
 .cta__box > h2 {
   text-align: center;
 }
-
 @media screen and (max-width: 450px) {
   .cta__box {
     width: 100%;

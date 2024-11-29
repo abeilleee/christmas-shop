@@ -5,10 +5,6 @@
     border-radius: 20px;
 }
 
-.hidden{
-    display: block !important;  //от injected styles в chrome
-}
-
 .hero__box {
     @include flex-column;
     justify-content: center;

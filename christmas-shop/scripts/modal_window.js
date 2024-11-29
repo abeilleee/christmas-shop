@@ -6,8 +6,6 @@ import { CARDS_CONTAINER } from "./constants.js";
 import { CARDS_BOX } from "./constants.js";
 import { setColorTitle } from "./cards_rendering.js";
 
-
-
 let cardId;
 
 if (document.body.contains(CARDS_BOX)) {
@@ -23,7 +21,6 @@ if (document.body.contains(CARDS_CONTAINER)) {
         cardId = Array(targetCard)[0].id;
     });
 };
-
 
 const createModalWindow = (array, id) => {
     let modal = document.createElement('div');
@@ -84,7 +81,6 @@ const setBackgroundImg = (array, id, card) => {
     }
 };
 
-
 //Добавление снежинок
 
 const addSnowfalls = (modal, category) => {
@@ -131,48 +127,16 @@ const addSnowfalls = (modal, category) => {
     }
 }
 
-
-
-// const setScores = (array, modal, category) => {
-//     const elem = modal.querySelector(`.scores___${category}`);  //Выбираю определенную категорию баллов
-//     let cardId = modal.getAttribute('id');
-
-//     const liveScores = array[cardId].superpowers.live / 100;
-//     const createScores = array[cardId].superpowers.create / 100;
-//     const loveScores = array[cardId].superpowers.love / 100;
-//     const dreamScores = array[cardId].superpowers.dream / 100;
-
-//     console.log('id: ' + modalId);
-
-//     if (category === 'live') {
-//         for (let i = 0; i < liveScores; i++) {
-//             arr[i].style.fill = '#FF4646';
-//         }
-//     } else if (category === 'create') {
-//         for (let i = 0; i < createScores; i++) {
-//             arr[i].style.fill = '#FF4646';
-//         }
-//     } else if (category === 'love') {
-//         for (let i = 0; i < loveScores; i++) {
-//             arr[i].style.fill = '#FF4646';
-//         }
-//     } else if (category === 'dream') {
-//         for (let i = 0; i < dreamScores; i++) {
-//             arr[i].style.fill = '#FF4646';
-//         }
-//     }
-// }
-
 const toggleClass = (element) => {
     element.classList.toggle('open');
-}
+};
 
 let child;
-let widthOfscroll = window.innerWidth - document.documentElement.clientWidth;
 
 const openModal = (event) => {
     const { target } = event;
-    // document.querySelector('.hidden').style.paddingRight = `${widthOfscroll}px`;
+
+    let widthOfscroll = window.innerWidth - document.documentElement.clientWidth;
 
     if (target.closest('.card')) {
         toggleClass(MODAL_WRAPPER);
@@ -185,8 +149,12 @@ const openModal = (event) => {
         addSnowfalls(child, 'love');
         addSnowfalls(child, 'dream');
         MODAL.appendChild(child);
+
+        if (widthOfscroll) {
+            document.body.style.paddingRight = `${widthOfscroll}px`;
+        }
     }
-}
+};
 
 
 if (document.body.contains(CARDS_BOX)) {
@@ -202,6 +170,7 @@ MODAL_WRAPPER.addEventListener(('click'), (event) => {
         toggleClass(MODAL_WRAPPER);
         document.body.classList.remove('hidden');
         MODAL.removeChild(child);
+        document.body.style.paddingRight = `0px`;
     }
 });
 
@@ -209,4 +178,5 @@ BTN_CLOSE_MODAL.addEventListener(('click'), (event) => {
     document.body.classList.remove('hidden');
     toggleClass(MODAL_WRAPPER);
     MODAL.removeChild(child);
+    document.body.style.paddingRight = `0px`;
 });
