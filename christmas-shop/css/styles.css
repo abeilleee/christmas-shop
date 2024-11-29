@@ -9,13 +9,13 @@ body {
   border: none;
 }
 
-.hidden {
-  display: block !important;
+.open-modal {
   overflow: hidden;
 }
 
-.open-modal {
-  margin-right: 0px;
+.hidden {
+  display: block !important;
+  overflow: hidden;
 }
 
 a,
@@ -758,8 +758,7 @@ svg {
 }
 .modal__wrapper.open {
   display: flex;
-  padding-right: 8px;
-  padding-left: 8px;
+  padding: 8px;
 }
 
 .modal__btn-close {

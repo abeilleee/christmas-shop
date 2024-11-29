@@ -140,7 +140,7 @@ const openModal = (event) => {
 
     if (target.closest('.card')) {
         toggleClass(MODAL_WRAPPER);
-        document.body.classList.add('hidden');
+        document.body.classList.add('open-modal');
         child = createModalWindow(cardsArray, cardId);
         setBackgroundImg(cardsArray, cardId, child);
         setColorTitle(cardsArray, cardId, child, 'modal__card');
@@ -168,14 +168,14 @@ if (document.body.contains(CARDS_CONTAINER)) {
 MODAL_WRAPPER.addEventListener(('click'), (event) => {
     if (event.target.classList.contains('modal__wrapper')) {
         toggleClass(MODAL_WRAPPER);
-        document.body.classList.remove('hidden');
+        document.body.classList.remove('open-modal');
         MODAL.removeChild(child);
         document.body.style.paddingRight = `0px`;
     }
 });
 
 BTN_CLOSE_MODAL.addEventListener(('click'), (event) => {
-    document.body.classList.remove('hidden');
+    document.body.classList.remove('open-modal');
     toggleClass(MODAL_WRAPPER);
     MODAL.removeChild(child);
     document.body.style.paddingRight = `0px`;

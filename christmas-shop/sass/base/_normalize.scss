@@ -9,6 +9,10 @@ body {
     border: none;
 }
 
+.open-modal {
+    overflow: hidden;
+}
+
 .hidden {
     display: block !important;  //от injected styles в chrome
     overflow: hidden;
@@ -21,10 +25,6 @@ body {
     // @media screen and (max-width: 768px) {
     //     margin-right: -1px;
     // }
-}
-
-.open-modal{
-    margin-right: 0px;
 }
 
 a,
