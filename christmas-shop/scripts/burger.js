@@ -31,7 +31,6 @@ LIST_ITEM_LINKS.forEach((element) => element.addEventListener('click', (event) =
     BURGER.classList.add('fixed');
 }));
 
-console.log(window.innerWidth)
 if (LIST_ITEM_ACTIVE) {
     if (window.innerWidth < 769) {
         LIST_ITEM_ACTIVE.addEventListener('click', () => {
