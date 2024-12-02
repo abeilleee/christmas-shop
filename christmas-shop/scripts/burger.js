@@ -31,16 +31,20 @@ LIST_ITEM_LINKS.forEach((element) => element.addEventListener('click', (event) =
     BURGER.classList.add('fixed');
 }));
 
+console.log(window.innerWidth)
 if (LIST_ITEM_ACTIVE) {
-    LIST_ITEM_ACTIVE.addEventListener('click', () => {
-        LIST_ITEM_ACTIVE.classList.remove('list-item--no-hover');
-        togglerOpen(BURGER);
-        togglerOpen(HEADER_NAV);
-        togglerOpen(NAV_LIST);
-        LIST_ITEM.forEach((elem) => elem.classList.remove('list-item--burger'));
-        document.body.classList.remove('hidden');
-    })
-};
+    if (window.innerWidth < 769) {
+        LIST_ITEM_ACTIVE.addEventListener('click', () => {
+            LIST_ITEM_ACTIVE.classList.remove('list-item--no-hover');
+            togglerOpen(BURGER);
+            togglerOpen(HEADER_NAV);
+            togglerOpen(NAV_LIST);
+            LIST_ITEM.forEach((elem) => elem.classList.remove('list-item--burger'));
+            document.body.classList.remove('hidden');
+        })
+    };
+}
+
 
 window.addEventListener(('resize'), () => {
     if (document.documentElement.clientWidth > 768) {
