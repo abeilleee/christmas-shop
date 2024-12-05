@@ -10,11 +10,14 @@ const togglerOpen = (element) => {
 }
 
 BURGER.addEventListener('click', (event) => {
-    togglerOpen(BURGER);
-    togglerOpen(HEADER_NAV);
-    togglerOpen(NAV_LIST);
-    LIST_ITEM.forEach((elem) => elem.classList.add('list-item--burger'));
-    document.body.classList.toggle('hidden');
+    if(!document.body.classList.contains('open-modal')) {
+        togglerOpen(BURGER);
+        togglerOpen(HEADER_NAV);
+        togglerOpen(NAV_LIST);
+        LIST_ITEM.forEach((elem) => elem.classList.add('list-item--burger'));
+        document.body.classList.toggle('hidden');
+    }
+    
 
 });
 
