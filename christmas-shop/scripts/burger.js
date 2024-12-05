@@ -48,7 +48,7 @@ if (LIST_ITEM_ACTIVE) {
 
 
 window.addEventListener(('resize'), () => {
-    if (document.documentElement.clientWidth > 768) {
+    if (document.documentElement.clientWidth > 769) {
         LIST_ITEM.forEach((elem) => elem.classList.remove('list-item--burger'));
         document.body.classList.remove('hidden');
     } else if (NAV_LIST.classList.contains('open') && document.documentElement.clientWidth < 768) {
