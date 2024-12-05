@@ -359,7 +359,7 @@ svg {
   position: relative;
   right: 0;
   transition: all 0.8s ease;
-  z-index: 2;
+  z-index: 1;
 }
 
 .slide {
