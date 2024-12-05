@@ -106,8 +106,7 @@
 
     @media screen and (max-width:769px) {
         & {
-            position: relative;
-            z-index: 2;
+            z-index: 1;
         }
     }
 }

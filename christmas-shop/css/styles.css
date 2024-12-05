@@ -572,8 +572,7 @@ svg {
 }
 @media screen and (max-width: 769px) {
   .logo {
-    position: relative;
-    z-index: 2;
+    z-index: 1;
   }
 }
 
