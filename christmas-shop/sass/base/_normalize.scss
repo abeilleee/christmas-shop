@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    
+}
+
+body {
+    border: none;
+}
+
+.open-modal {
+    overflow: hidden;
+}
+
+.hidden {
+    display: block !important; //от injected styles в chrome
+    overflow: hidden;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
