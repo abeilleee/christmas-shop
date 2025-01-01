@@ -4,14 +4,15 @@ const MINUTES = document.querySelector('.timer__minutes');
 const SECONDS = document.querySelector('.timer__seconds');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const deadline = new Date(2025, 12, 0o1);
+    let deadline = new Date(2025, 12, 0o1);
     let timerON = '';
 
     const timer = () => {
         let diff = deadline - new Date();
         diff = diff + 10800000;
         if (diff <= 0) {
-            clearInterval(timerID);
+            let newDeadlineYear = deadline.getFullYear() + 1;
+            deadline = new Date(`${newDeadlineYear}`, 12, 0o1);
         }
 
         const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
