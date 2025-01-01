@@ -4,7 +4,7 @@ const MINUTES = document.querySelector('.timer__minutes');
 const SECONDS = document.querySelector('.timer__seconds');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const deadline = new Date(2024, 12, 0o1);
+    const deadline = new Date(2025, 12, 0o1);
     let timerON = '';
 
     const timer = () => {
